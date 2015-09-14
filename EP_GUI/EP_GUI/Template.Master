@@ -1,0 +1,70 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Template.master.cs" Inherits="EP_GUI.Template1" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="css/hover.css" rel="stylesheet" media="all"/>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <!-- Page Loader-->
+         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+                    <script type="text/javascript">
+                        $(window).load(function () {
+                            $(".loader").fadeOut("slow");
+                        })
+        </script>
+    
+</head>
+      
+<body>
+  
+<div id="wrap">
+    <form id="form1" runat="server">
+      <div class="loader"> </div>
+        <header>
+        <div id="topbar">
+                    <div style="padding-left:5px;padding-top:10px; height:30px">
+                        <div style="float:right; padding-right:50px; padding-top:12px;">
+                            <asp:Image ImageUrl="~/Images/user_symbol.png" runat="server" class="user_symbol"/>
+                            <asp:Label ID="Label1" runat="server" Text=" Welcome, Xxx" CssClass="welcome_msg"></asp:Label>
+                        </div>
+                         <h1 id="sitename"><a href="Homepage.aspx">
+                              <asp:Image ImageUrl="~/Images/Keysight_Technologies_Logo.png" runat="server" Width="255px" Height="60px" CssClass="hvr-grow"/>
+                             </a>
+                              </h1>
+                    </div>
+            
+                    <div id="menus">
+                          <ul id="topmenu">
+                                <li><a href="#">Admin</a></li>
+                                <li class="active"><a href="#">Evaluate</a></li>
+                                <li><a href="Report_Landing.aspx">Report</a></li>
+                                 <li><a href="Profile_Setting.aspx">Settings</a></li>
+                                <li><a href="#">Log out</a></li>
+                                </ul>
+           
+                         </div>
+                     </div>
+    </header>
+    <div class="content-wrapper3"> 
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+         </form>
+    </div>
+       
+        <footer>  
+           <center>
+               <p class="p_keysight">&copy; Keysight Technologies <%: DateTime.Now.Year %></p>   
+           </center>
+               
+       </footer>  
+
+   
+</body>
+</html>

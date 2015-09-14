@@ -1,0 +1,97 @@
+﻿.container {
+    margin: 10px 50px 50px 50px;
+}
+
+.this_box {
+    margin: 20px 10% 30px 30%;
+    align-content: center;
+    color: #000;
+    height: auto;
+    font-size: 16px;
+    width: 500px;
+    height: auto;
+    -moz-box-shadow: 0px 3px 6px #c9c9c9;
+    -webkit-box-shadow: 0px 3px 6px #c9c9c9;
+    box-shadow: 0px 3px 6px #c9c9c9;
+}
+
+fieldset {
+    background-color: #fff;
+    border: none;
+    padding: 20px 10px 10px 120px;
+    align-content: center;
+}
+
+h2 {
+    color: #fff;
+    background-color: #D64541;
+    font-size: 20px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+}
+
+.btn {
+    background: transparent;
+    -webkit-border-radius: 28;
+    -moz-border-radius: 28;
+    border-radius: 28px;
+    font-family: Lato, sans-serif;
+    color: #59ABE3;
+    font-size: 20px;
+    padding: 10px 20px 10px 20px;
+    border: solid #59ABE3 2px;
+    text-decoration: none;
+    width: 250px;
+}
+
+.btnExport {
+    background: #D64541;
+    -webkit-border-radius: 28;
+    -moz-border-radius: 28;
+    border-radius: 28px;
+    font-family: Lato, sans-serif;
+    color: #fff;
+    font-size: 20px;
+    padding: 10px 20px 10px 20px;
+    border: solid #D64541 2px;
+    text-decoration: none;
+    width: 250px;
+}
+
+.btn:hover {
+    background: #22A7F0;
+    color: #fff;
+    cursor: pointer;
+    text-decoration: none;
+    border: solid #22A7F0 2px;
+}
+
+.btnExport:hover {
+    background: #EF4836;
+    text-decoration: none;
+    color: #fff;
+    cursor: pointer;
+    border: solid #EF4836 2px;
+}
+
+.back_btn {
+    padding: 3px 3px 3px 3px;
+    margin-top: 20px;
+    margin-left: 50px;
+    text-align: center;
+    display: inline-block;
+    font-size: 15px;
+    font-family: 'Lato', sans-serif;
+    color: #fff;
+    background-color: #22A7F0;
+    border: solid 5px #22A7F0;
+    text-decoration: none;
+    cursor: pointer;
+    vertical-align: middle;
+}
+
+    .back_btn:hover {
+        background-color: #3498DB;
+        border: solid 5px #3498DB;
+    }
