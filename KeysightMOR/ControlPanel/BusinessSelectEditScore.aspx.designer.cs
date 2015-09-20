@@ -13,13 +13,13 @@ namespace KeysightMOR {
     public partial class BusinessSelectEditScore {
         
         /// <summary>
-        /// CM control.
+        /// upBusinessEditScore control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList CM;
+        protected global::System.Web.UI.UpdatePanel upBusinessEditScore;
         
         /// <summary>
         /// Month control.
@@ -31,6 +31,15 @@ namespace KeysightMOR {
         protected global::System.Web.UI.WebControls.DropDownList Month;
         
         /// <summary>
+        /// rfvDdlMonth control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvDdlMonth;
+        
+        /// <summary>
         /// Year control.
         /// </summary>
         /// <remarks>
@@ -38,6 +47,69 @@ namespace KeysightMOR {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.DropDownList Year;
+        
+        /// <summary>
+        /// rfvDdlYear control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvDdlYear;
+        
+        /// <summary>
+        /// CM control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList CM;
+        
+        /// <summary>
+        /// rfvDdlCM control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvDdlCM;
+        
+        /// <summary>
+        /// Division control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList Division;
+        
+        /// <summary>
+        /// rfvDdlDiv control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvDdlDiv;
+        
+        /// <summary>
+        /// User control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList User;
+        
+        /// <summary>
+        /// rfvDdlUser control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvDdlUser;
         
         /// <summary>
         /// Select control.

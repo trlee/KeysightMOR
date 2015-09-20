@@ -56,12 +56,13 @@ td {
 
 .q_clr {
     text-align: center;
-    background-color: #FDFDAF;
+    background-color: #ff9994;
 }
 
 .r_clr {
     text-align: center;
-    background-color: #ff9994;
+    background-color: #FDFDAF;
+    width:20%;
 }
 
 .d_clr {
@@ -73,6 +74,25 @@ td {
     text-align: center;
     background-color: #B4CFEC;
 }
+
+.auto-style1 {
+            width: 24%;
+        }
+        .auto-style2 {
+            text-align: center;
+            background-color: #FDFDAF;
+            width: 24%;
+        }
+        .auto-style3 {
+            text-align: center;
+            background-color: #BDECB6;
+            width: 24%;
+        }
+        .auto-style4 {
+            text-align: center;
+            background-color: #B4CFEC;
+            width: 24%;
+        }
 
 .back_btn {
     padding: 3px 3px 3px 3px;

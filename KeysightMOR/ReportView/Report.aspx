@@ -7,6 +7,7 @@
 
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <asp:Button ID="Button4" runat="server" Text="Back" class="back_btn" PostBackUrl="~/ReportView/SelectReport.aspx" />
+    <p style="text-align:center"><asp:Label runat="server" ID="error_Msg" CssClass="error_Msg" ForeColor="Red" /><asp:Label runat="server" ID="testing"/></p>
     <div class="container">
         <div class="this_box">
             <h2>Report
@@ -23,8 +24,8 @@
                     </tr>
                     <tr>
                         <td>
-                            <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="">
-                                <asp:Button ID="Button2" runat="server" Text="Graph" class="btn" PostBackUrl="~/ReportView/Graph.aspx" />
+                            <asp:HyperLink ID="HyperLink2" runat="server">
+                                <asp:Button ID="Button2" runat="server" Text="Graph" class="btn" />
                             </asp:HyperLink>
                         </td>
                     </tr>

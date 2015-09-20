@@ -83,3 +83,13 @@ td {
     height: 25px;
     line-height: 25px;
 }
+
+.gridViewComment{
+    width:250px;
+    text-align:left;
+}
+.error_Msg{
+    text-align:center;
+    align-items:center;
+    color: #FF0000;
+}

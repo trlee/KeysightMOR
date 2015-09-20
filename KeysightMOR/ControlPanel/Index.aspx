@@ -78,12 +78,12 @@
                                                 <span>Score</span></h2>
                                             <div>
                                                 <p>
-                                                    <asp:HyperLink ID="EditResponsivenessScore" runat="server" NavigateUrl="~/ControlPanel/ResponsivenessEditScore.aspx">Responsiveness</asp:HyperLink>
+                                                    <asp:HyperLink ID="EditResponsivenessScore" runat="server" NavigateUrl="#">Responsiveness</asp:HyperLink>
 
                                                 </p>
                                                 <br />
                                                 <p>
-                                                    <asp:HyperLink ID="EditDeliveryScore" runat="server" NavigateUrl="~/ControlPanel/DeliveryEditScore.aspx">Delivery</asp:HyperLink>
+                                                    <asp:HyperLink ID="EditDeliveryScore" runat="server" NavigateUrl="#">Delivery</asp:HyperLink>
                                                 </p>
                                                 <br />
                                                 <p>
@@ -97,8 +97,6 @@
                             </tr>
                             <tr>
                                 <td>
-
-
                                     <figure class="effect-julia">
                                         <img src="../Assets/Images/ControlPanel/CMSettings.png" />
                                         <figcaption>

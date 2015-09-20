@@ -88,16 +88,22 @@
     <Content Include="Assets\Stylesheets\ControlPanel\DeliveryScoreViewEdit.css" />
     <Content Include="Assets\Stylesheets\ControlPanel\DeliverySelectEditScore.css" />
     <Content Include="Assets\Stylesheets\ControlPanel\DeliveryUserViewEdit.css" />
+    <Content Include="Assets\Stylesheets\ControlPanel\EditScore\BusinessSelectEditScore.css" />
     <Content Include="Assets\Stylesheets\ControlPanel\QualityScoreViewEdit.css" />
     <Content Include="Assets\Stylesheets\ControlPanel\ResponsivenessEditScore.css" />
     <Content Include="Assets\Stylesheets\ControlPanel\ResponsivenessScoreViewEdit.css" />
     <Content Include="Assets\Stylesheets\ControlPanel\ResponsivenessSelectEditScore.css" />
     <Content Include="Assets\Stylesheets\ControlPanel\ResponsivenessUserViewEdit.css" />
     <Content Include="Assets\Stylesheets\dataentry.css" />
+    <Content Include="Assets\Stylesheets\DataEntry\B1TabEntry.css" />
+    <Content Include="Assets\Stylesheets\DataEntry\R1TabEntry.css" />
     <Content Include="Assets\Stylesheets\demo.css" />
+    <Content Include="Assets\Stylesheets\Home.css" />
     <Content Include="Assets\Stylesheets\hover.css" />
+    <Content Include="Assets\Stylesheets\LoginAuth\ForgotPassword.css" />
     <Content Include="Assets\Stylesheets\ReportView\Business.css" />
     <Content Include="Assets\Stylesheets\ReportView\Delivery.css" />
+    <Content Include="Assets\Stylesheets\ReportView\Graph.css" />
     <Content Include="Assets\Stylesheets\ReportView\Report.css" />
     <Content Include="Assets\Stylesheets\ReportView\Responsiveness.css" />
     <Content Include="Assets\Stylesheets\ReportView\SelectReport.css" />
@@ -133,7 +139,6 @@
     <Content Include="DataEntry\Responsiveness\R1TabEntry.aspx" />
     <Content Include="DataEntry\Responsiveness\R2TabEntry.aspx" />
     <Content Include="DataEntry\Responsiveness\R3TabEntry.aspx" />
-    <Content Include="ControlPanel\DeliveryEditScore.aspx" />
     <Content Include="ControlPanel\DeliverySelectEditScore.aspx" />
     <Content Include="LoginAuth\ForgotPassword.aspx" />
     <Content Include="logo.ico" />
@@ -149,7 +154,6 @@
     <Content Include="ReportView\Responsiveness.aspx" />
     <Content Include="ControlPanel\ResponsivenessSelectEditScore.aspx" />
     <Content Include="ReportView\SelectReport.aspx" />
-    <Content Include="ControlPanel\ResponsivenessEditScore.aspx" />
     <Content Include="packages.config" />
     <None Include="Scripts\jquery-2.1.4.intellisense.js" />
     <Content Include="ReportView\Summary.aspx" />
@@ -390,13 +394,6 @@
     <Compile Include="DataEntry\Responsiveness\R3TabEntry.aspx.designer.cs">
       <DependentUpon>R3TabEntry.aspx</DependentUpon>
     </Compile>
-    <Compile Include="ControlPanel\DeliveryEditScore.aspx.cs">
-      <DependentUpon>DeliveryEditScore.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="ControlPanel\DeliveryEditScore.aspx.designer.cs">
-      <DependentUpon>DeliveryEditScore.aspx</DependentUpon>
-    </Compile>
     <Compile Include="ControlPanel\DeliverySelectEditScore.aspx.cs">
       <DependentUpon>DeliverySelectEditScore.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -510,13 +507,6 @@
     <Compile Include="ReportView\SelectReport.aspx.designer.cs">
       <DependentUpon>SelectReport.aspx</DependentUpon>
     </Compile>
-    <Compile Include="ControlPanel\ResponsivenessEditScore.aspx.cs">
-      <DependentUpon>ResponsivenessEditScore.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="ControlPanel\ResponsivenessEditScore.aspx.designer.cs">
-      <DependentUpon>ResponsivenessEditScore.aspx</DependentUpon>
-    </Compile>
     <Compile Include="ReportView\Summary.aspx.cs">
       <DependentUpon>Summary.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -541,6 +531,10 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Assets\Scripts\" />
+    <Folder Include="ControlPanel\Add\" />
+    <Folder Include="ControlPanel\Changelogs\" />
+    <Folder Include="ControlPanel\Score\" />
+    <Folder Include="ControlPanel\ViewDelete\" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />

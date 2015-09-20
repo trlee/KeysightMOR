@@ -52,7 +52,7 @@ namespace KeysightMOR.ReportView
             }
             catch (Exception ex)
             {
-                Response.Write(ex.ToString());
+                error_Msg.Text = "Some error(s) occur while retrieving full report";
             }
         }
     }

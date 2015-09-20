@@ -1,137 +1,371 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Template.Master" AutoEventWireup="true" CodeBehind="BusinessEditScore1.aspx.cs" Inherits="KeysightMOR.BusinessEditScore" %>
+﻿<%@ Page Title="Business Edit Score | Keysight Technologies" Language="C#" MasterPageFile="~/Template.Master" AutoEventWireup="true" CodeBehind="BusinessEditScore.aspx.cs" Inherits="KeysightMOR.ControlPanel.BusinessEditScore" %>
+
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-    <link rel="stylesheet" href="../Assets/Stylesheets/controlpanel.css" />
-    <link rel="stylesheet" href="../Assets/Stylesheets/ControlPanel/BusinessEditScore.css" />
+    <link rel="stylesheet" href="../Assets/Stylesheets/dataentry.css" />
+    <link rel="stylesheet" href="../Assets/Stylesheets/DataEntry/B1TabEntry.css"/>
 </asp:Content>
-
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <div style="margin-left:auto;margin-right:auto">
-    <div class="confB_box" style="margin-left:auto;margin-right:auto">       
-        <h2>Edit Score > Business</h2>
-
+    <center>
+    <div class="this_box">       
+        <h2 class="title">Business Edit Score</h2>
         <fieldset>
-            <div class="description">
-                <p class="title-description" style="text-align:center">Selected CM, Month, Year</p> 
-                <p style="text-align:center">Score Edit Status: <asp:Label ID="lblEditStatus" runat="server" Font-Bold="true"></asp:Label></p>
-            </div>
-    
-            <div class="buve_table">
-                <table>
-                    <tr>
-                        <td style="width:100px"><h3>B1</h3></td>
-                        <td style="width:60px"><h3>1(a)</h3></td>
-                        <td></td>
-                        <td style="width:60px"><h3>1(b)</h3></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td style="width:100px;text-align:left;">SCM</td>
-                        <td><asp:TextBox ID="txtB1Scm1a" runat="server" Text="4" Width="50"></asp:TextBox></td>
-                        <td><asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="txtB1Scm1a" ErrorMessage="*" ForeColor="Red"></asp:RequiredFieldValidator></td>
-                        <td><asp:TextBox ID="txtB1Scm1b" runat="server" Text="4" Width="50"></asp:TextBox></td>
-                        <td><asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="txtB1Scm1b" ErrorMessage="*" ForeColor="Red"></asp:RequiredFieldValidator></td>
-                    </tr>
-                    <tr>
-                        <td style="text-align:left; width: 100px;">CM AOS</td>
-                        <td><asp:TextBox ID="txtB1CmAos1a" runat="server" Text="4" Width="50"></asp:TextBox></td>
-                        <td><asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ControlToValidate="txtB1CmAos1a" ErrorMessage="*" ForeColor="Red"></asp:RequiredFieldValidator></td>
-                        <td><asp:TextBox ID="txtB1CmAos1b" runat="server" Text="4" Width="50"></asp:TextBox></td>
-                        <td><asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" ControlToValidate="txtB1CmAos1b" ErrorMessage="*" ForeColor="Red"></asp:RequiredFieldValidator></td>
-                    </tr>
-                    <tr>
-                        <td style="text-align:left; width: 100px;">MSC</td>
-                        <td><asp:TextBox ID="txtB1Msc1a" runat="server" Text="4" Width="50"></asp:TextBox></td>
-                        <td><asp:RequiredFieldValidator ID="RequiredFieldValidator5" runat="server" ControlToValidate="txtB1Msc1a" ErrorMessage="*" ForeColor="Red"></asp:RequiredFieldValidator></td>
-                        <td><asp:TextBox ID="txtB1Msc1b" runat="server" Text="4" Width="50"></asp:TextBox></td>
-                        <td><asp:RequiredFieldValidator ID="RequiredFieldValidator6" runat="server" ControlToValidate="txtB1Msc1b" ErrorMessage="*" ForeColor="Red"></asp:RequiredFieldValidator></td>
-                    </tr>
-                </table>
-                <br />
-                <br />
-                <table>
-                    <tr>
-                        <td><h3>B2</h3></td>
-                            <td style="width:60px"><h3>1(a)</h3></td>
-                            <td></td>
-                            <td style="width:60px"><h3>1(b)</h3></td>
-                            <td></td>
-                            <td style="width:60px"><h3>1(c)</h3></td>
-                            <td></td>
-                            <td style="width:60px"><h3>1(d)</h3></td>
-                            <td></td>
-                            <td style="width:60px"><h3>1(e)</h3></td>
-                            <td></td>
-                            <td style="width:60px"><h3>2</h3></td>
-                            <td></td>
-                    </tr>
-                    <tr>
-                        <td style="width:100px; text-align:left;">SCM</td>
-                        <td><asp:TextBox ID="txtB2Scm1a" runat="server" Text="4" Width="50"></asp:TextBox></td>
-                        <td><asp:RequiredFieldValidator ID="RequiredFieldValidator7" runat="server" ControlToValidate="txtB2Scm1a" ErrorMessage="*" ForeColor="Red"></asp:RequiredFieldValidator></td>
-                        <td><asp:TextBox ID="txtB2Scm1b" runat="server" Text="4" Width="50"></asp:TextBox></td>
-                        <td><asp:RequiredFieldValidator ID="RequiredFieldValidator8" runat="server" ControlToValidate="txtB2Scm1b" ErrorMessage="*" ForeColor="Red"></asp:RequiredFieldValidator></td>
-                        <td><asp:TextBox ID="txtB2Scm1c" runat="server" Text="4" Width="50"></asp:TextBox></td>
-                        <td><asp:RequiredFieldValidator ID="RequiredFieldValidator9" runat="server" ControlToValidate="txtB2Scm1c" ErrorMessage="*" ForeColor="Red"></asp:RequiredFieldValidator></td>
-                        <td><asp:TextBox ID="txtB2Scm1d" runat="server" Text="4" Width="50"></asp:TextBox></td>
-                        <td><asp:RequiredFieldValidator ID="RequiredFieldValidator10" runat="server" ControlToValidate="txtB2Scm1d" ErrorMessage="*" ForeColor="Red"></asp:RequiredFieldValidator></td>
-                        <td><asp:TextBox ID="txtB2Scm1e" runat="server" Text="4" Width="50"></asp:TextBox></td>
-                        <td><asp:RequiredFieldValidator ID="RequiredFieldValidator11" runat="server" ControlToValidate="txtB2Scm1e" ErrorMessage="*" ForeColor="Red"></asp:RequiredFieldValidator></td>
-                        <td><asp:TextBox ID="txtB2Scm2" runat="server" Text="4" Width="50"></asp:TextBox></td>
-                        <td><asp:RequiredFieldValidator ID="RequiredFieldValidator12" runat="server" ControlToValidate="txtB2Scm2" ErrorMessage="*" ForeColor="Red"></asp:RequiredFieldValidator></td>
-                    </tr>
-                    <tr>
-                        <td style="width:100px; text-align:left;">CM AOS</td>
-                        <td><asp:TextBox ID="txtB2CmAos1a" runat="server" Text="4" Width="50"></asp:TextBox></td>
-                        <td><asp:RequiredFieldValidator ID="RequiredFieldValidator13" runat="server" ControlToValidate="txtB2CmAos1a" ErrorMessage="*" ForeColor="Red"></asp:RequiredFieldValidator></td>
-                        <td><asp:TextBox ID="txtB2CmAos1b" runat="server" Text="4" Width="50"></asp:TextBox></td>
-                        <td><asp:RequiredFieldValidator ID="RequiredFieldValidator14" runat="server" ControlToValidate="txtB2CmAos1b" ErrorMessage="*" ForeColor="Red"></asp:RequiredFieldValidator></td>
-                        <td><asp:TextBox ID="txtB2CmAos1c" runat="server" Text="4" Width="50"></asp:TextBox></td>
-                        <td><asp:RequiredFieldValidator ID="RequiredFieldValidator15" runat="server" ControlToValidate="txtB2CmAos1c" ErrorMessage="*" ForeColor="Red"></asp:RequiredFieldValidator></td>
-                        <td><asp:TextBox ID="txtB2CmAos1d" runat="server" Text="4" Width="50"></asp:TextBox></td>
-                        <td><asp:RequiredFieldValidator ID="RequiredFieldValidator16" runat="server" ControlToValidate="txtB2CmAos1d" ErrorMessage="*" ForeColor="Red"></asp:RequiredFieldValidator></td>
-                        <td><asp:TextBox ID="txtB2CmAos1e" runat="server" Text="4" Width="50"></asp:TextBox></td>
-                        <td><asp:RequiredFieldValidator ID="RequiredFieldValidator17" runat="server" ControlToValidate="txtB2CmAos1e" ErrorMessage="*" ForeColor="Red"></asp:RequiredFieldValidator></td>
-                        <td><asp:TextBox ID="txtB2CmAos2" runat="server" Text="4" Width="50"></asp:TextBox></td>
-                        <td><asp:RequiredFieldValidator ID="RequiredFieldValidator18" runat="server" ControlToValidate="txtB2CmAos2" ErrorMessage="*" ForeColor="Red"></asp:RequiredFieldValidator></td>
-                    </tr>
-                    <tr>
-                        <td style="width:100px; text-align:left;">MSC</td>
-                        <td><asp:TextBox ID="txtB2Msc1a" runat="server" Text="4" Width="50"></asp:TextBox></td>
-                        <td><asp:RequiredFieldValidator ID="RequiredFieldValidator19" runat="server" ControlToValidate="txtB2Msc1a" ErrorMessage="*" ForeColor="Red"></asp:RequiredFieldValidator></td>
-                        <td><asp:TextBox ID="txtB2Msc1b" runat="server" Text="4" Width="50"></asp:TextBox></td>
-                        <td><asp:RequiredFieldValidator ID="RequiredFieldValidator20" runat="server" ControlToValidate="txtB2Msc1b" ErrorMessage="*" ForeColor="Red"></asp:RequiredFieldValidator></td>
-                        <td><asp:TextBox ID="txtB2Msc1c" runat="server" Text="4" Width="50"></asp:TextBox></td>
-                        <td><asp:RequiredFieldValidator ID="RequiredFieldValidator21" runat="server" ControlToValidate="txtB2Msc1c" ErrorMessage="*" ForeColor="Red"></asp:RequiredFieldValidator></td>
-                        <td><asp:TextBox ID="txtB2Msc1d" runat="server" Text="4" Width="50"></asp:TextBox></td>
-                        <td><asp:RequiredFieldValidator ID="RequiredFieldValidator22" runat="server" ControlToValidate="txtB2Msc1d" ErrorMessage="*" ForeColor="Red"></asp:RequiredFieldValidator></td>
-                        <td><asp:TextBox ID="txtB2Msc1e" runat="server" Text="4" Width="50"></asp:TextBox></td>
-                        <td><asp:RequiredFieldValidator ID="RequiredFieldValidator23" runat="server" ControlToValidate="txtB2Msc1e" ErrorMessage="*" ForeColor="Red"></asp:RequiredFieldValidator></td>
-                        <td><asp:TextBox ID="txtB2Msc2" runat="server" Text="4" Width="50"></asp:TextBox></td>
-                        <td><asp:RequiredFieldValidator ID="RequiredFieldValidator24" runat="server" ControlToValidate="txtB2Msc2" ErrorMessage="*" ForeColor="Red"></asp:RequiredFieldValidator></td>
-                    </tr>
-                </table>
-            </div>
-            <br />
-
+             <table class="selectCM_table">
+                <tr>
+                    <td style="width:50px; text-align:left;padding-left:30px">CM : <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label></td>
+                    <td style="width:20%" class="cell_item">Division : <asp:Label ID="Label2" runat="server" Text="Label"></asp:Label></td>
+                </tr>
+            </table>
+            <p>
+                <asp:Label ID="lblSubmitDbStatusTrue" runat="server" ForeColor="Green" Font-Size="Medium"></asp:Label>
+                <asp:Label ID="lblSubmitDbStatusFalse" runat="server" ForeColor="Red" Font-Size="Medium"></asp:Label>
+            </p>
+            <p>
+                <asp:Label ID="lblValidMsg" runat="server" ForeColor="Green" Font-Size="Medium"></asp:Label>
+                <asp:Label ID="lblValidInMsg" runat="server" ForeColor="Red" Font-Size="Medium"></asp:Label>
+            </p>
+            <asp:Table ID="Table1" CssClass="this_table" runat="server">
+                <asp:TableRow>
+                    <asp:TableCell CssClass="head"><h3>B1</h3></asp:TableCell>
+                    <asp:TableCell Width="120px"><h3>Score</h3></asp:TableCell>
+                    <asp:TableCell CssClass="cell_score"><h3>Comment</h3></asp:TableCell>
+                </asp:TableRow>
+                <asp:TableRow>
+                    <asp:TableCell ColumnSpan="3" CssClass="auto-style1">1) Corporate Compliances</asp:TableCell>
+                </asp:TableRow>
+                <asp:TableRow>
+                    <asp:TableCell>
+                        <asp:Table ID="Table2" runat="server">
+                            <asp:TableRow>
+                                <asp:TableCell CssClass="item-description">i)</asp:TableCell>
+                                <asp:TableCell CssClass="item-description">Ability to follow preferred supply paths, including distributor and 3rd party supply channels. This includes following the Keysight negotiated business awards where multiple suppliers are listed on the AVL.
+                                </asp:TableCell>
+                            </asp:TableRow>
+                        </asp:Table>
+                    </asp:TableCell>
+                    <asp:TableCell CssClass="cell_item">
+                        <asp:TextBox ID="B1_1_1" runat="server" CssClass="txtbox" Width="50"></asp:TextBox>
+                        <asp:RangeValidator ID="RangeValidator1" ControlToValidate="B1_1_1" MinimumValue="0" MaximumValue="4" Type="Integer" runat="server" ErrorMessage="Enter a value from 0 to 4" ForeColor="Red" Font-Size="X-Small"></asp:RangeValidator>
+                    </asp:TableCell>
+                    <asp:TableCell CssClass="cell_item">
+                        <asp:HyperLink ID="Comment1" NavigateUrl="#popup1" CssClass="comm_link" runat="server">Add a comment...</asp:HyperLink>
+                    </asp:TableCell>    
+                </asp:TableRow>
+                <asp:TableRow>
+                    <asp:TableCell>
+                        <asp:Table ID="Table3" runat="server">
+                            <asp:TableRow>
+                                <asp:TableCell CssClass="item-description">ii)</asp:TableCell>
+                                <asp:TableCell CssClass="item-description">Adhere to standard setting requirements (timeline & data accuracy)</asp:TableCell>
+                            </asp:TableRow>
+                        </asp:Table>
+                    </asp:TableCell>
+                    <asp:TableCell CssClass="cell_item">
+                        <asp:TextBox ID="B1_1_2" runat="server" CssClass="txtbox" Width="50"></asp:TextBox>
+                        <asp:RangeValidator ID="RangeValidator2" ControlToValidate="B1_1_2" MinimumValue="0" MaximumValue="4" Type="Integer" runat="server" ErrorMessage="Enter a value from 0 to 4" ForeColor="Red" Font-Size="X-Small"></asp:RangeValidator>
+                    </asp:TableCell>
+                    <asp:TableCell CssClass="cell_item">
+                        <asp:HyperLink ID="Comment2" NavigateUrl="#popup2" CssClass="comm_link" runat="server">Add a comment...</asp:HyperLink>
+                    </asp:TableCell>    
+                </asp:TableRow>
+                <asp:TableRow>
+                    <asp:TableCell>
+                        <asp:Table ID="Table4" runat="server">
+                            <asp:TableRow>
+                                <asp:TableCell CssClass="item-description">iii)</asp:TableCell>
+                                <asp:TableCell CssClass="item-description">Quarterly PPV INV Assessment</asp:TableCell>
+                            </asp:TableRow>
+                        </asp:Table>
+                    </asp:TableCell>
+                    <asp:TableCell CssClass="cell_item">
+                        <asp:TextBox ID="B1_1_3" runat="server" CssClass="txtbox" Width="50"></asp:TextBox>
+                        <asp:RangeValidator ID="RangeValidator9" ControlToValidate="B1_1_3" MinimumValue="0" MaximumValue="4" Type="Integer" runat="server" ErrorMessage="Enter a value from 0 to 4" ForeColor="Red" Font-Size="X-Small"></asp:RangeValidator>
+                    </asp:TableCell>
+                    <asp:TableCell CssClass="cell_item">
+                        <asp:HyperLink ID="Comment9" NavigateUrl="#popup9" CssClass="comm_link" runat="server">Add a comment...</asp:HyperLink>
+                    </asp:TableCell>    
+                </asp:TableRow>
+                <asp:TableRow>
+                    <asp:TableCell CssClass="head"><h3>B2</h3></asp:TableCell>
+                    <asp:TableCell Width="120px"><h3>Score</h3></asp:TableCell>
+                    <asp:TableCell CssClass="cell_score"><h3>Comment</h3></asp:TableCell>
+                </asp:TableRow>
+                <asp:TableRow>
+                    <asp:TableCell ColumnSpan="3" CssClass="auto-style1">a) Reporting</asp:TableCell>
+                </asp:TableRow>
+                <asp:TableRow>
+                    <asp:TableCell>i) AP/AR</asp:TableCell>
+                    <asp:TableCell CssClass="cell_item">
+                        <asp:TextBox ID="B2_1_1" runat="server" CssClass="txtbox" Width="50"></asp:TextBox>
+                        <asp:RangeValidator ID="RangeValidator3" ControlToValidate="B2_1_1" MinimumValue="0" MaximumValue="4" Type="Integer" runat="server" ErrorMessage="Enter a value from 0 to 4" ForeColor="Red" Font-Size="X-Small"></asp:RangeValidator>
+                    </asp:TableCell>
+                    <asp:TableCell CssClass="cell_item">
+                        <asp:HyperLink ID="Comment3" NavigateUrl="#popup3" CssClass="comm_link" runat="server">Add a comment...</asp:HyperLink>
+                    </asp:TableCell>
+                </asp:TableRow>
+                <asp:TableRow>
+                    <asp:TableCell>ii) ECN &nbsp; <a href="#" title="0-3 cases=Y;" style="font-size:xx-small; color:blue;">(?)</a></asp:TableCell>
+                    <asp:TableCell CssClass="cell_item">
+                        <asp:TextBox ID="B2_1_2" runat="server" CssClass="txtbox" Width="50"></asp:TextBox>
+                        <asp:RangeValidator ID="RangeValidator4" ControlToValidate="B2_1_2" MinimumValue="0" MaximumValue="4" Type="Integer" runat="server" ErrorMessage="Enter a value from 0 to 4" ForeColor="Red" Font-Size="X-Small"></asp:RangeValidator>                       
+                    </asp:TableCell>
+                    <asp:TableCell CssClass="cell_item">
+                        <asp:HyperLink ID="Comment4" NavigateUrl="#popup4" CssClass="comm_link" runat="server">Add a comment...</asp:HyperLink>
+                    </asp:TableCell>
+                </asp:TableRow>
+                <asp:TableRow>
+                    <asp:TableCell>iii) E&O/Aging inventory & inventory profiling report &nbsp; <a href="#" title="1~2 cases=P; >2 cases=N;" style="font-size:xx-small; color:blue;">(?)</a></asp:TableCell>
+                        <asp:TableCell CssClass="cell_item">
+                            <asp:TextBox ID="B2_1_3" runat="server" CssClass="txtbox" Width="50"></asp:TextBox>
+                            <asp:RangeValidator ID="RangeValidator5" ControlToValidate="B2_1_3" MinimumValue="0" MaximumValue="4" Type="Integer" runat="server" ErrorMessage="Enter a value from 0 to 4" ForeColor="Red" Font-Size="X-Small"></asp:RangeValidator>
+                        </asp:TableCell>
+                    <asp:TableCell>
+                        <asp:HyperLink ID="Comment5" NavigateUrl="#popup5" CssClass="comm_link" runat="server">Add a comment...</asp:HyperLink>
+                    </asp:TableCell>
+                </asp:TableRow>
+                <asp:TableRow>
+                    <asp:TableCell>iv) PPV monthly report &nbsp; <a href="#" title="+PPV not return to Keysight= N; Late PPV returns= P; Resubmit non approve PPV claims= N; Data error submission= N" style="font-size:xx-small; color:blue;">(?)</a></asp:TableCell>
+                    <asp:TableCell CssClass="cell_item">
+                        <asp:TextBox ID="B2_1_4" runat="server" CssClass="txtbox" Width="50"></asp:TextBox>
+                        <asp:RangeValidator ID="RangeValidator6" ControlToValidate="B2_1_4" MinimumValue="0" MaximumValue="4" Type="Integer" runat="server" ErrorMessage="Enter a value from 0 to 4" ForeColor="Red" Font-Size="X-Small"></asp:RangeValidator>
+                    </asp:TableCell>
+                    <asp:TableCell>
+                        <asp:HyperLink ID="Comment6" NavigateUrl="#popup6" CssClass="comm_link" runat="server">Add a comment...</asp:HyperLink>
+                    </asp:TableCell>
+                </asp:TableRow>
+                <asp:TableRow>
+                    <asp:TableCell>v) Stock On Hand Revaluation report (inclusive quarterly PPV report)</asp:TableCell>
+                    <asp:TableCell CssClass="cell_item">
+                        <asp:TextBox ID="B2_1_5" runat="server" CssClass="txtbox" Width="50"></asp:TextBox>
+                        <asp:RangeValidator ID="RangeValidator7" ControlToValidate="B2_1_5" MinimumValue="0" MaximumValue="4" Type="Integer" runat="server" ErrorMessage="Enter a value from 0 to 4" ForeColor="Red" Font-Size="X-Small"></asp:RangeValidator>
+                    </asp:TableCell>
+                    <asp:TableCell>
+                        <asp:HyperLink ID="Comment7" NavigateUrl="#popup7" CssClass="comm_link" runat="server">Add a comment...</asp:HyperLink>
+                    </asp:TableCell>
+                </asp:TableRow>
+                <asp:TableRow>
+                    <asp:TableCell ColumnSpan="3" CssClass="auto-style1">b) Quotation</asp:TableCell>
+                </asp:TableRow>
+                <asp:TableRow>
+                    <asp:TableCell>i) Production Cost Model accuracy and transparency. &nbsp; <a href="#" title="1 case= P; >1 =N" style="font-size:xx-small; color:blue;">(?)</a></asp:TableCell>
+                    <asp:TableCell CssClass="cell_item">
+                        <asp:TextBox ID="B2_2_1" runat="server" CssClass="txtbox" Width="50"></asp:TextBox>
+                        <asp:RangeValidator ID="RangeValidator8" ControlToValidate="B2_2_1" MinimumValue="0" MaximumValue="4" Type="Integer" runat="server" ErrorMessage="Enter a value from 0 to 4" ForeColor="Red" Font-Size="X-Small"></asp:RangeValidator>
+                    </asp:TableCell>
+                    <asp:TableCell>
+                        <asp:HyperLink ID="Comment8" NavigateUrl="#popup8" CssClass="comm_link" runat="server">Add a comment...</asp:HyperLink>
+                    </asp:TableCell>
+                </asp:TableRow>
+            </asp:Table>
+            <br />           
             <div class="div_button">
-                <table style="float:right">
-                    <tr>
-                        <td>
-                            <asp:Button ID="btnEdit" runat="server" Text="Edit"  CssClass="action-button hvr-radial-out" OnClick="btnEdit_Click"/>
-                        </td>
-
-                        <td>
-                            <asp:Button ID="btnSave" runat="server" Text="Save Changes" CssClass="action-button hvr-radial-out" OnClick="btnSave_Click" Visible="false" OnClientClick="return confirm('Are you sure you want to save the changes done?')"/>
-                        </td>
-
-                        <td>
-                            <asp:HyperLink ID="hlCancelEdit" runat="server" Text="Cancel" CssClass="cancel_button" NavigateUrl="~/ControlPanel/Index.aspx"></asp:HyperLink>
-                            <%--<asp:Button ID="btnCancel" runat="server" Text="Cancel" CssClass="cancel_button" PostBackUrl="~/ControlPanel/Index.aspx"/>--%>
-                        </td>
-                    </tr>
-                </table>               
+                <asp:Button ID="Save_Draft" runat="server" Text="Save"  CssClass="action-button hvr-radial-out" OnClick="Save_Draft_Click"/>
+                &nbsp;&nbsp;
+                <asp:Button ID="Cancel1" runat="server" Text="Cancel" CssClass="cancel_button"/>
             </div>
-        </fieldset>
+        </fieldset>      
     </div>
+    </center>
+    <!--=========================================================-->
+    <!---Pop Up (i)--->
+    <div id="popup1" class="overlay">
+        <div class="popup">
+
+            <a class="close" href="#">×</a>
+            <br />
+            <h2>Add a Comment</h2>
+            <center><p class="title-description">Add a comment and/or attachment</p>
+		
+                    <p>
+                        <asp:TextBox ID="B1_1_1C" runat="server" CssClass="textbox-comment" TextMode="MultiLine"></asp:TextBox>
+                    </p>
+		
+                    
+                    <p>
+                        <asp:FileUpload ID="FileUpload1" runat="server" />
+                    </p>
+                        <p>Maximum up to 5 files (Total size not more than 10MB)</p>
+                        <asp:Button runat="server" ID="submit_b1_1_1_comment" Text="Submit" Width="80px" Height="20px" OnClick="submit_b1_1_1_comment_Click" />
+                        <asp:Button runat="server" ID="cancel_b1_1_1_comment" Text="Cancel" widht="80px" Height="20px" OnClick="cancel_b1_1_1_comment_Click" />
+                    </center>
+        </div>
     </div>
+
+    <div id="popup2" class="overlay">
+        <div class="popup">
+
+            <a class="close" href="#">×</a>
+            <br />
+            <h2>Add a Comment</h2>
+            <center><p class="title-description">Add a comment and/or attachment</p>
+		
+                    <p>
+                        <asp:TextBox ID="B1_1_2C" runat="server" CssClass="textbox-comment" TextMode="MultiLine"></asp:TextBox>
+                    </p>
+		
+                    
+                    <p>
+                        <asp:FileUpload ID="FileUpload2" runat="server" />
+                    </p>
+                        <p>Maximum up to 5 files (Total size not more than 10MB)</p>
+                        <asp:Button runat="server" ID="submit_b1_1_2_comment" Text="Submit" Width="80px" Height="20px" OnClick="submit_b1_1_2_comment_Click" />
+                        <asp:Button runat="server" ID="cancel_b1_1_2_comment" Text="Cancel" widht="80px" Height="20px" OnClick="cancel_b1_1_2_comment_Click"/>
+                    </center>
+        </div>
+    </div>
+    <div id="popup3" class="overlay">
+        <div class="popup">
+
+            <a class="close" href="#">×</a>
+            <br />
+            <h2>Add a Comment</h2>
+            <center><p class="title-description">Add a comment and/or attachment</p>
+		
+                    <p>
+                        <asp:TextBox ID="B2_1_1C" runat="server" CssClass="textbox-comment" TextMode="MultiLine"></asp:TextBox>
+                    </p>
+		
+                    
+                    <p>
+                        <asp:FileUpload ID="FileUpload3" runat="server" />
+                    </p>
+                        <p>Maximum up to 5 files (Total size not more than 10MB)</p>
+                        <asp:Button runat="server" ID="submit_b2_1_1_comment" Text="Submit" Width="80px" Height="20px" OnClick="submit_b2_1_1_comment_Click" />
+                        <asp:Button runat="server" ID="cancel_b2_1_1_comment" Text="Cancel" widht="80px" Height="20px" OnClick="cancel_b2_1_1_comment_Click" />
+                    </center>
+        </div>
+    </div>
+    <div id="popup4" class="overlay">
+        <div class="popup">
+
+            <a class="close" href="#">×</a>
+            <br />
+            <h2>Add a Comment</h2>
+            <center><p class="title-description">Add a comment and/or attachment</p>
+		
+                    <p>
+                        <asp:TextBox ID="B2_1_2C" runat="server" CssClass="textbox-comment" TextMode="MultiLine"></asp:TextBox>
+                    </p>
+		
+                    
+                    <p>
+                        <asp:FileUpload ID="FileUpload4" runat="server" />
+                    </p>
+                        <p>Maximum up to 5 files (Total size not more than 10MB)</p>
+                        <asp:Button runat="server" ID="submit_b2_1_2_comment" Text="Submit" Width="80px" Height="20px" OnClick="submit_b2_1_2_comment_Click" />
+                        <asp:Button runat="server" ID="cancel_b2_1_2_comment" Text="Cancel" widht="80px" Height="20px" OnClick="cancel_b2_1_2_comment_Click" />
+                    </center>
+        </div>
+    </div>
+    <div id="popup5" class="overlay">
+        <div class="popup">
+
+            <a class="close" href="#">×</a>
+            <br />
+            <h2>Add a Comment</h2>
+            <center><p class="title-description">Add a comment and/or attachment</p>
+		
+                    <p>
+                        <asp:TextBox ID="B2_1_3C" runat="server" CssClass="textbox-comment" TextMode="MultiLine"></asp:TextBox>
+                    </p>
+		
+                    
+                    <p>
+                        <asp:FileUpload ID="FileUpload5" runat="server" />
+                    </p>
+                        <p>Maximum up to 5 files (Total size not more than 10MB)</p>
+                        <asp:Button runat="server" ID="submit_b2_1_3_comment" Text="Submit" Width="80px" Height="20px" OnClick="submit_b2_1_3_comment_Click" />
+                        <asp:Button runat="server" ID="cancel_b2_1_3_comment" Text="Cancel" widht="80px" Height="20px" OnClick="cancel_b2_1_3_comment_Click" />
+                    </center>
+        </div>
+    </div>
+    <div id="popup6" class="overlay">
+        <div class="popup">
+
+            <a class="close" href="#">×</a>
+            <br />
+            <h2>Add a Comment</h2>
+            <center><p class="title-description">Add a comment and/or attachment</p>
+		
+                    <p>
+                        <asp:TextBox ID="B2_1_4C" runat="server" CssClass="textbox-comment" TextMode="MultiLine"></asp:TextBox>
+                    </p>
+		
+                    
+                    <p>
+                        <asp:FileUpload ID="FileUpload6" runat="server" />
+                    </p>
+                        <p>Maximum up to 5 files (Total size not more than 10MB)</p>
+                        <asp:Button runat="server" ID="submit_b2_1_4_comment" Text="Submit" Width="80px" Height="20px" OnClick="submit_b2_1_4_comment_Click" />
+                        <asp:Button runat="server" ID="cancel_b2_1_4_comment" Text="Cancel" widht="80px" Height="20px" OnClick="cancel_b2_1_4_comment_Click" />
+                    </center>
+        </div>
+    </div>
+    <div id="popup7" class="overlay">
+        <div class="popup">
+
+            <a class="close" href="#">×</a>
+            <br />
+            <h2>Add a Comment</h2>
+            <center><p class="title-description">Add a comment and/or attachment</p>
+		
+                    <p>
+                        <asp:TextBox ID="B2_1_5C" runat="server" CssClass="textbox-comment" TextMode="MultiLine"></asp:TextBox>
+                    </p>
+		
+                    
+                    <p>
+                        <asp:FileUpload ID="FileUpload7" runat="server" />
+                    </p>
+                        <p>Maximum up to 5 files (Total size not more than 10MB)</p>
+                        <asp:Button runat="server" ID="submit_b2_1_5_comment" Text="Submit" Width="80px" Height="20px" OnClick="submit_b2_1_5_comment_Click" />
+                        <asp:Button runat="server" ID="cancel_b2_1_5_comment" Text="Cancel" widht="80px" Height="20px" OnClick="cancel_b2_1_5_comment_Click" />
+                    </center>
+        </div>
+    </div>
+    <div id="popup8" class="overlay">
+        <div class="popup">
+
+            <a class="close" href="#">×</a>
+            <br />
+            <h2>Add a Comment</h2>
+            <center><p class="title-description">Add a comment and/or attachment</p>
+		
+                    <p>
+                        <asp:TextBox ID="B2_2_1C" runat="server" CssClass="textbox-comment" TextMode="MultiLine"></asp:TextBox>
+                    </p>
+		
+                    
+                    <p>
+                        <asp:FileUpload ID="FileUpload8" runat="server" />
+                    </p>
+                        <p>Maximum up to 5 files (Total size not more than 10MB)</p>
+                        <asp:Button runat="server" ID="submit_b2_2_1_comment" Text="Submit" Width="80px" Height="20px" OnClick="submit_b2_2_1_comment_Click"/>
+                        <asp:Button runat="server" ID="cancel_b2_2_1_comment" Text="Cancel" widht="80px" Height="20px" OnClick="cancel_b2_2_1_comment_Click" />
+                    </center>
+        </div>
+    </div>
+    <div id="popup9" class="overlay">
+        <div class="popup">
+
+            <a class="close" href="#">×</a>
+            <br />
+            <h2>Add a Comment</h2>
+            <center><p class="title-description">Add a comment and/or attachment</p>
+		
+                    <p>
+                        <asp:TextBox ID="B1_1_3C" runat="server" CssClass="textbox-comment" TextMode="MultiLine"></asp:TextBox>
+                    </p>
+		
+                    
+                    <p>
+                        <asp:FileUpload ID="FileUpload9" runat="server" />
+                    </p>
+                        <p>Maximum up to 5 files (Total size not more than 10MB)</p>
+                        <asp:Button runat="server" ID="submit_b1_1_3_comment" Text="Submit" Width="80px" Height="20px" OnClick="submit_b1_1_3_comment_Click"/>
+                        <asp:Button runat="server" ID="cancel_b1_1_3_comment" Text="Cancel" widht="80px" Height="20px" OnClick="cancel_b1_1_3_comment_Click" />
+                    </center>
+        </div>
+    </div>
+
+    <!--=========================================================================-->
 </asp:Content>

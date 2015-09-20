@@ -44,7 +44,7 @@ namespace KeysightMOR.ReportView
             }
             catch (Exception ex)
             {
-                Response.Write(ex.ToString());
+                error_Msg.Text = "Some error(s) occur while retrieving full report";
             }
 
             try //Get avrg score (tab1)
@@ -109,6 +109,7 @@ namespace KeysightMOR.ReportView
                             r2_totalscore = r2_score * 0.5;
                             r2_totalscorelbl.Text = r2_totalscore.ToString("0.00");
                             r_score = r1_totalscore + r2_totalscore;
+                            Math.Round(r_score, 2);
                             R_Score.Text = r_score.ToString("0.00");
                             //================================================================
                         }                        
@@ -117,7 +118,7 @@ namespace KeysightMOR.ReportView
             }
             catch (Exception ex)
             {
-                Response.Write(ex.ToString());
+                error_Msg.Text = "Some error(s) occur while retrieving full report";
             }
         }//End page load
 
@@ -314,7 +315,7 @@ namespace KeysightMOR.ReportView
             }//End try
             catch (Exception ex)
             {
-                Response.Write(ex.ToString());
+                error_Msg.Text = "Some error(s) occur while retrieving full report";
             }
         }//End getComment()
     }// End class

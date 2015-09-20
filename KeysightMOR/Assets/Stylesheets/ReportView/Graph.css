@@ -1,0 +1,55 @@
+﻿#table {
+    background-color: white;
+    border-collapse: separate;
+    border-spacing: 0px;
+    border: 1px #e7e7e7;
+    border-style: solid;
+}
+
+    #table tr, td, th {
+        padding: 5px;
+        border: 1px #e7e7e7;
+        border-style: solid;
+    }
+
+    #table th {
+        color: #fff;
+        background-color: #6BB9F0;
+    }
+.error_Msg{
+    text-align:center;
+    align-items:center;
+    color: #FF0000;
+}
+#ReportG {
+    margin-top: 20px;
+    width: 90%;
+    margin-left: 5%;
+    background-color:white;
+    padding: 0 20px 10px 20px;
+}
+
+.back_btn {
+    padding: 3px 3px 3px 3px;
+    margin-top: 20px;
+    margin-left: 50px;
+    text-align: center;
+    display: inline-block;
+    font-size: 15px;
+    font-family: 'Lato', sans-serif;
+    color: #fff;
+    background-color: #22A7F0;
+    border: solid 5px #22A7F0;
+    text-decoration: none;
+    cursor: pointer;
+    vertical-align: middle;
+}
+
+    .back_btn:hover {
+        background-color: #3498DB;
+        border: solid 5px #3498DB;
+    }
+
+.itemStyle{
+    text-align:left;
+}

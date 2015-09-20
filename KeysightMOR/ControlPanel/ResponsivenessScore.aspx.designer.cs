@@ -22,13 +22,13 @@ namespace KeysightMOR.ControlPanel {
         protected global::System.Web.UI.UpdatePanel upDeliveryScore;
         
         /// <summary>
-        /// CM control.
+        /// ddlCM control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList CM;
+        protected global::System.Web.UI.WebControls.DropDownList ddlCM;
         
         /// <summary>
         /// rfvDdlCM control.
@@ -40,31 +40,13 @@ namespace KeysightMOR.ControlPanel {
         protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvDdlCM;
         
         /// <summary>
-        /// Month control.
+        /// ddlYear control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList Month;
-        
-        /// <summary>
-        /// rfvDdlMonth control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvDdlMonth;
-        
-        /// <summary>
-        /// Year control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList Year;
+        protected global::System.Web.UI.WebControls.DropDownList ddlYear;
         
         /// <summary>
         /// rfvDdlYear control.
@@ -76,21 +58,39 @@ namespace KeysightMOR.ControlPanel {
         protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvDdlYear;
         
         /// <summary>
-        /// Submit control.
+        /// ddlMonth control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Submit;
+        protected global::System.Web.UI.WebControls.DropDownList ddlMonth;
         
         /// <summary>
-        /// Cancel control.
+        /// rfvDdlMonth control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Cancel;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvDdlMonth;
+        
+        /// <summary>
+        /// btnSubmit control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnSubmit;
+        
+        /// <summary>
+        /// btnCancel control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnCancel;
     }
 }

@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Template.Master" AutoEventWireup="true" CodeBehind="Business.aspx.cs" Inherits="KeysightMOR.ReportView.Business1" %>
+﻿<%@ Page Title="Business Report | Keysight Technologies" Language="C#" MasterPageFile="~/Template.Master" AutoEventWireup="true" CodeBehind="Business.aspx.cs" Inherits="KeysightMOR.ReportView.Business1" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <link rel="stylesheet" href="../../Assets/Stylesheets/dataentry.css" />
@@ -8,6 +8,7 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
     <asp:Button ID="Button1" runat="server" Text="Back" class="back_btn" PostBackUrl="~/ReportView/Report.aspx" />
+    <p style="text-align:center"><asp:Label runat="server" ID="error_Msg" CssClass="error_Msg" ForeColor="Red" /></p>
     <div class="container">
         <table>
             <tr>

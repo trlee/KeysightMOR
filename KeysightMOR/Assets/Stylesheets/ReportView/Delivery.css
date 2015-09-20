@@ -1,7 +1,11 @@
 ﻿.container {
     margin: 10px 50px 50px 50px;
 }
-
+.error_Msg{
+    text-align:center;
+    align-items:center;
+    color: #FF0000;
+}
 .table1, .table2 {
     background-color: #fff;
     text-overflow: initial;

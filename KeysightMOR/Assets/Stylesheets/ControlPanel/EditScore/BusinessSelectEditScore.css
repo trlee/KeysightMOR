@@ -15,11 +15,7 @@ fieldset {
     border: none;
     padding: 20px 10px 10px 10px;
 }
-.error_Msg{
-    text-align:center;
-    align-items:center;
-    color: #FF0000;
-}
+
 h2 {
     color: #fff;
     background-color: #D64541;

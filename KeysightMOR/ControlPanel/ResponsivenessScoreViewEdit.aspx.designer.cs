@@ -13,6 +13,15 @@ namespace KeysightMOR.ControlPanel {
     public partial class ResponsivenessScoreViewEdit {
         
         /// <summary>
+        /// lblStatusMsg control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblStatusMsg;
+        
+        /// <summary>
         /// txtR2a control.
         /// </summary>
         /// <remarks>
@@ -22,13 +31,22 @@ namespace KeysightMOR.ControlPanel {
         protected global::System.Web.UI.WebControls.TextBox txtR2a;
         
         /// <summary>
-        /// RequiredFieldValidator1 control.
+        /// rfvtxtR2a control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator1;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvtxtR2a;
+        
+        /// <summary>
+        /// rvtxtR2a control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RangeValidator rvtxtR2a;
         
         /// <summary>
         /// txtR2b control.
@@ -40,31 +58,49 @@ namespace KeysightMOR.ControlPanel {
         protected global::System.Web.UI.WebControls.TextBox txtR2b;
         
         /// <summary>
-        /// RequiredFieldValidator2 control.
+        /// rfvtxtR2b control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator2;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvtxtR2b;
         
         /// <summary>
-        /// Save control.
+        /// rvtxtR2b control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Save;
+        protected global::System.Web.UI.WebControls.RangeValidator rvtxtR2b;
         
         /// <summary>
-        /// Cancel control.
+        /// btnSave control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Cancel;
+        protected global::System.Web.UI.WebControls.Button btnSave;
+        
+        /// <summary>
+        /// btnCancel control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnCancel;
+        
+        /// <summary>
+        /// hfLastUpdated control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.HiddenField hfLastUpdated;
         
         /// <summary>
         /// txtLLM00 control.
@@ -76,13 +112,22 @@ namespace KeysightMOR.ControlPanel {
         protected global::System.Web.UI.WebControls.TextBox txtLLM00;
         
         /// <summary>
-        /// RequiredFieldValidator3 control.
+        /// rfvtxtLLM00 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator3;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvtxtLLM00;
+        
+        /// <summary>
+        /// rvtxtLLM00 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RangeValidator rvtxtLLM00;
         
         /// <summary>
         /// txtLLM05 control.
@@ -94,13 +139,22 @@ namespace KeysightMOR.ControlPanel {
         protected global::System.Web.UI.WebControls.TextBox txtLLM05;
         
         /// <summary>
-        /// RequiredFieldValidator4 control.
+        /// rfvtxtLLM05 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator4;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvtxtLLM05;
+        
+        /// <summary>
+        /// rvtxtLLM05 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RangeValidator rvtxtLLM05;
         
         /// <summary>
         /// txtLLM10 control.
@@ -112,13 +166,22 @@ namespace KeysightMOR.ControlPanel {
         protected global::System.Web.UI.WebControls.TextBox txtLLM10;
         
         /// <summary>
-        /// RequiredFieldValidator5 control.
+        /// rfvtxtLLM10 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator5;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvtxtLLM10;
+        
+        /// <summary>
+        /// rvtxtLLM10 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RangeValidator rvtxtLLM10;
         
         /// <summary>
         /// txtLLM15 control.
@@ -130,13 +193,22 @@ namespace KeysightMOR.ControlPanel {
         protected global::System.Web.UI.WebControls.TextBox txtLLM15;
         
         /// <summary>
-        /// RequiredFieldValidator6 control.
+        /// rfvtxtLLM15 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator6;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvtxtLLM15;
+        
+        /// <summary>
+        /// rvtxtLLM15 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RangeValidator rvtxtLLM15;
         
         /// <summary>
         /// txtLLM20 control.
@@ -148,13 +220,22 @@ namespace KeysightMOR.ControlPanel {
         protected global::System.Web.UI.WebControls.TextBox txtLLM20;
         
         /// <summary>
-        /// RequiredFieldValidator7 control.
+        /// rfvtxtLLM20 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator7;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvtxtLLM20;
+        
+        /// <summary>
+        /// rvtxtLLM20 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RangeValidator rvtxtLLM20;
         
         /// <summary>
         /// txtLLM25 control.
@@ -166,13 +247,22 @@ namespace KeysightMOR.ControlPanel {
         protected global::System.Web.UI.WebControls.TextBox txtLLM25;
         
         /// <summary>
-        /// RequiredFieldValidator8 control.
+        /// rfvtxtLLM25 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator8;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvtxtLLM25;
+        
+        /// <summary>
+        /// rvtxtLLM25 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RangeValidator rvtxtLLM25;
         
         /// <summary>
         /// txtLLM30 control.
@@ -184,13 +274,22 @@ namespace KeysightMOR.ControlPanel {
         protected global::System.Web.UI.WebControls.TextBox txtLLM30;
         
         /// <summary>
-        /// RequiredFieldValidator9 control.
+        /// rfvtxtLLM30 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator9;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvtxtLLM30;
+        
+        /// <summary>
+        /// rvtxtLLM30 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RangeValidator rvtxtLLM30;
         
         /// <summary>
         /// txtLLM35 control.
@@ -202,13 +301,22 @@ namespace KeysightMOR.ControlPanel {
         protected global::System.Web.UI.WebControls.TextBox txtLLM35;
         
         /// <summary>
-        /// RequiredFieldValidator10 control.
+        /// rfvtxtLLM35 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator10;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvtxtLLM35;
+        
+        /// <summary>
+        /// rvtxtLLM35 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RangeValidator rvtxtLLM35;
         
         /// <summary>
         /// txtLLM40 control.
@@ -220,13 +328,22 @@ namespace KeysightMOR.ControlPanel {
         protected global::System.Web.UI.WebControls.TextBox txtLLM40;
         
         /// <summary>
-        /// RequiredFieldValidator11 control.
+        /// rfvtxtLLM40 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator11;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvtxtLLM40;
+        
+        /// <summary>
+        /// rvtxtLLM40 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RangeValidator rvtxtLLM40;
         
         /// <summary>
         /// txtFG00 control.
@@ -238,13 +355,22 @@ namespace KeysightMOR.ControlPanel {
         protected global::System.Web.UI.WebControls.TextBox txtFG00;
         
         /// <summary>
-        /// rfvFG00 control.
+        /// rfvtxtFG00 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvFG00;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvtxtFG00;
+        
+        /// <summary>
+        /// rvtxtFG00 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RangeValidator rvtxtFG00;
         
         /// <summary>
         /// txtFG05 control.
@@ -256,13 +382,22 @@ namespace KeysightMOR.ControlPanel {
         protected global::System.Web.UI.WebControls.TextBox txtFG05;
         
         /// <summary>
-        /// rfvFG05 control.
+        /// rfvtxtFG05 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvFG05;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvtxtFG05;
+        
+        /// <summary>
+        /// rvtxtFG05 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RangeValidator rvtxtFG05;
         
         /// <summary>
         /// txtFG10 control.
@@ -274,13 +409,22 @@ namespace KeysightMOR.ControlPanel {
         protected global::System.Web.UI.WebControls.TextBox txtFG10;
         
         /// <summary>
-        /// rfvFG10 control.
+        /// rfvtxtFG10 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvFG10;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvtxtFG10;
+        
+        /// <summary>
+        /// rvtxtFG10 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RangeValidator rvtxtFG10;
         
         /// <summary>
         /// txtFG15 control.
@@ -292,13 +436,22 @@ namespace KeysightMOR.ControlPanel {
         protected global::System.Web.UI.WebControls.TextBox txtFG15;
         
         /// <summary>
-        /// rfvFG15 control.
+        /// rfvtxtFG15 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvFG15;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvtxtFG15;
+        
+        /// <summary>
+        /// rvtxtFG15 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RangeValidator rvtxtFG15;
         
         /// <summary>
         /// txtFG20 control.
@@ -310,13 +463,22 @@ namespace KeysightMOR.ControlPanel {
         protected global::System.Web.UI.WebControls.TextBox txtFG20;
         
         /// <summary>
-        /// rfvFG20 control.
+        /// rfvtxtFG20 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvFG20;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvtxtFG20;
+        
+        /// <summary>
+        /// rvtxtFG20 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RangeValidator rvtxtFG20;
         
         /// <summary>
         /// txtFG25 control.
@@ -328,13 +490,22 @@ namespace KeysightMOR.ControlPanel {
         protected global::System.Web.UI.WebControls.TextBox txtFG25;
         
         /// <summary>
-        /// rfvFG25 control.
+        /// rfvtxtFG25 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvFG25;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvtxtFG25;
+        
+        /// <summary>
+        /// rvtxtFG25 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RangeValidator rvtxtFG25;
         
         /// <summary>
         /// txtFG30 control.
@@ -346,13 +517,22 @@ namespace KeysightMOR.ControlPanel {
         protected global::System.Web.UI.WebControls.TextBox txtFG30;
         
         /// <summary>
-        /// rfvFG30 control.
+        /// rfvtxtFG30 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvFG30;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvtxtFG30;
+        
+        /// <summary>
+        /// rvtxtFG30 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RangeValidator rvtxtFG30;
         
         /// <summary>
         /// txtFG35 control.
@@ -364,13 +544,22 @@ namespace KeysightMOR.ControlPanel {
         protected global::System.Web.UI.WebControls.TextBox txtFG35;
         
         /// <summary>
-        /// rfvFG35 control.
+        /// rfvtxtFG35 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvFG35;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvtxtFG35;
+        
+        /// <summary>
+        /// rvtxtFG35 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RangeValidator rvtxtFG35;
         
         /// <summary>
         /// txtFG40 control.
@@ -382,13 +571,22 @@ namespace KeysightMOR.ControlPanel {
         protected global::System.Web.UI.WebControls.TextBox txtFG40;
         
         /// <summary>
-        /// rfvFG40 control.
+        /// rfvtxtFG40 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvFG40;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvtxtFG40;
+        
+        /// <summary>
+        /// rvtxtFG40 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RangeValidator rvtxtFG40;
         
         /// <summary>
         /// btnSavePopup control.
@@ -398,14 +596,5 @@ namespace KeysightMOR.ControlPanel {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button btnSavePopup;
-        
-        /// <summary>
-        /// btnCancelPopup control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnCancelPopup;
     }
 }

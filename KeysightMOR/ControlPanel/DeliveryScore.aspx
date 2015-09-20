@@ -21,10 +21,10 @@
                             <tr>
                                 <td>Contract Manufacturer</td>
                                 <td>
-                                    <asp:DropDownList ID="CM" runat="server" class="dropdown" OnSelectedIndexChanged="CM_SelectedIndexChanged" AppendDataBoundItems="true" AutoPostBack="true">
+                                    <asp:DropDownList ID="ddlCM" runat="server" class="dropdown" OnSelectedIndexChanged="CM_SelectedIndexChanged" AppendDataBoundItems="true" AutoPostBack="true">
                                         <asp:ListItem Text="Pick CM" Value="-1"></asp:ListItem>
                                     </asp:DropDownList>
-                                    <asp:RequiredFieldValidator ID="rfvDdlCM" runat="server" ControlToValidate="CM" ErrorMessage="*" InitialValue="-1"></asp:RequiredFieldValidator>
+                                    <asp:RequiredFieldValidator ID="rfvDdlCM" runat="server" ControlToValidate="ddlCM" ErrorMessage="*" InitialValue="-1"></asp:RequiredFieldValidator>
                                 </td>
                             </tr>
                         </table>
@@ -35,20 +35,20 @@
                             <tr>
                                 <td>Month</td>
                                 <td>
-                                    <asp:DropDownList ID="Month" runat="server" class="dropdown" OnSelectedIndexChanged="Month_SelectedIndexChanged" AppendDataBoundItems="true" AutoPostBack="true">
+                                    <asp:DropDownList ID="ddlMonth" runat="server" class="dropdown" OnSelectedIndexChanged="Month_SelectedIndexChanged" AppendDataBoundItems="true" AutoPostBack="true">
                                         <asp:ListItem Text="Pick Month" Value="-1"></asp:ListItem>
                                     </asp:DropDownList>
-                                    <asp:RequiredFieldValidator ID="rfvDdlMonth" runat="server" ControlToValidate="Month" ErrorMessage="*" InitialValue="-1"></asp:RequiredFieldValidator>
+                                    <asp:RequiredFieldValidator ID="rfvDdlMonth" runat="server" ControlToValidate="ddlMonth" ErrorMessage="*" InitialValue="-1"></asp:RequiredFieldValidator>
                                 </td>
 
                                 <td>&nbsp;&nbsp;</td>
 
                                 <td>Year</td>
                                 <td>
-                                    <asp:DropDownList ID="Year" runat="server" class="dropdown" OnSelectedIndexChanged="Year_SelectedIndexChanged" AppendDataBoundItems="true" AutoPostBack="true">
+                                    <asp:DropDownList ID="ddlYear" runat="server" class="dropdown" OnSelectedIndexChanged="Year_SelectedIndexChanged" AppendDataBoundItems="true" AutoPostBack="true">
                                         <asp:ListItem Text="Pick Year" Value="-1"></asp:ListItem>
                                     </asp:DropDownList>
-                                    <asp:RequiredFieldValidator ID="rfvDdlYear" runat="server" ControlToValidate="Year" ErrorMessage="*" InitialValue="-1"></asp:RequiredFieldValidator>
+                                    <asp:RequiredFieldValidator ID="rfvDdlYear" runat="server" ControlToValidate="ddlYear" ErrorMessage="*" InitialValue="-1"></asp:RequiredFieldValidator>
                                 </td>
                             </tr>
 
@@ -62,8 +62,8 @@
 
                             <tr>
                                 <td colspan="5" style="text-align: right">
-                                    <asp:Button ID="Submit" PostBackUrl="DeliveryScoreViewEdit.aspx" runat="server" Text="Submit" CssClass="action-button hvr-radial-out" />
-                                    <asp:Button ID="Cancel" runat="server" Text="Cancel" CssClass="cancel_button" OnClick="Cancel_Click" />
+                                    <asp:Button ID="btnSubmit" runat="server" Text="Submit" CssClass="action-button hvr-radial-out" OnClick="btnSubmit_Click" />
+                                    <asp:Button ID="btnCancel" runat="server" Text="Cancel" CssClass="cancel_button" OnClick="Cancel_Click" />
                                 </td>
                             </tr>
                         </table>

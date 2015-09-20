@@ -13,6 +13,15 @@ namespace KeysightMOR {
     public partial class ChangeLogSelectCM {
         
         /// <summary>
+        /// lblStatus control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblStatus;
+        
+        /// <summary>
         /// CM control.
         /// </summary>
         /// <remarks>
@@ -22,13 +31,13 @@ namespace KeysightMOR {
         protected global::System.Web.UI.WebControls.DropDownList CM;
         
         /// <summary>
-        /// DropDownList2 control.
+        /// RespDev control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList DropDownList2;
+        protected global::System.Web.UI.WebControls.DropDownList RespDev;
         
         /// <summary>
         /// Submit control.

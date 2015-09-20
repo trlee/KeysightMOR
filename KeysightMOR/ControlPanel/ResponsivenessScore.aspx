@@ -8,7 +8,7 @@
     <div style="margin-left: auto; margin-right: auto">
         <div class="box">
             <h2>Score Settings &gt; Responsiveness</h2>
-
+            
             <fieldset>
                 <div class="description">
                     <p class="title-description" style="text-align:center">Configure score settings for Responsiveness</p>
@@ -33,16 +33,6 @@
 
                         <table style="width: 70%; margin-left: auto; margin-right: auto; text-align: center">
                             <tr>
-                                <td>Month</td>
-                                <td>
-                                    <asp:DropDownList ID="ddlMonth" runat="server" class="dropdown" OnSelectedIndexChanged="ddlMonth_SelectedIndexChanged" AppendDataBoundItems="true" AutoPostBack="true">
-                                        <asp:ListItem Text="Pick Month" Value="-1"></asp:ListItem>
-                                    </asp:DropDownList>
-                                    <asp:RequiredFieldValidator ID="rfvDdlMonth" runat="server" ControlToValidate="ddlMonth" ErrorMessage="*" InitialValue="-1" ForeColor="Red"></asp:RequiredFieldValidator>
-                                </td>
-
-                                <td>&nbsp;&nbsp;</td>
-
                                 <td>Year</td>
                                 <td>
                                     <asp:DropDownList ID="ddlYear" runat="server" class="dropdown" OnSelectedIndexChanged="ddlYear_SelectedIndexChanged" AppendDataBoundItems="true" AutoPostBack="true">
@@ -50,6 +40,17 @@
                                     </asp:DropDownList>
                                     <asp:RequiredFieldValidator ID="rfvDdlYear" runat="server" ControlToValidate="ddlYear" ErrorMessage="*" InitialValue="-1" ForeColor="Red"></asp:RequiredFieldValidator>
                                 </td>
+
+                                <td>&nbsp;&nbsp;</td>
+
+                                <td>Month</td>
+                                <td>
+                                    <asp:DropDownList ID="ddlMonth" runat="server" class="dropdown" AppendDataBoundItems="true" AutoPostBack="true">
+                                        <asp:ListItem Text="Pick Month" Value="-1"></asp:ListItem>
+                                    </asp:DropDownList>
+                                    <asp:RequiredFieldValidator ID="rfvDdlMonth" runat="server" ControlToValidate="ddlMonth" ErrorMessage="*" InitialValue="-1" ForeColor="Red"></asp:RequiredFieldValidator>
+                                </td>
+                                
                             </tr>
 
                             <tr>
@@ -63,7 +64,7 @@
                             <tr>
                                 <td colspan="5" style="text-align: right">
                                     <asp:Button ID="btnSubmit" runat="server" Text="Submit" CssClass="action-button hvr-radial-out" OnClick="btnSubmit_Click" />
-                                    <asp:Button ID="btnCancel" runat="server" Text="Cancel" CssClass="cancel_button" OnClick="btnCancel_Click"/>
+                                    <asp:Button ID="btnCancel" runat="server" Text="Cancel" CssClass="cancel_button" OnClick="btnCancel_Click" CausesValidation="false"/>
                                 </td>
                             </tr>
                         </table>

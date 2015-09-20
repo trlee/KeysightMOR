@@ -76,6 +76,15 @@ namespace KeysightMOR {
         protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvDdlYear;
         
         /// <summary>
+        /// error_Msg control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label error_Msg;
+        
+        /// <summary>
         /// Submit control.
         /// </summary>
         /// <remarks>

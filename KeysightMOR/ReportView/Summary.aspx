@@ -1,255 +1,92 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Template.Master" AutoEventWireup="true" CodeBehind="Summary.aspx.cs" Inherits="KeysightMOR.ReportView.Summary1" %>
-<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-    <link rel="stylesheet" href="../../Assets/Stylesheets/dataentry.css" />
-</asp:Content>
-<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <div id="content" class="ui-content">
-              <div id="mainpage">
-               <div id="summaryReport">
-<table style="width:800px" border="1">
-        <tr>
-           <td colspan="2" style="text-align: center">
-               <h2>              
-                   Monthly/Annual Operational Review Scorecard
-                   <br />
-                   Minumum Acceptable Target 3.3 By Scoring Category
-               </h2>               
-           </td> 
-        </tr>
-        <tr>
-            <td colspan="2">
-                <h2>
-                    <br />
-                    Supplier: Jabil
-                </h2>
-                <br />
-                <h2>
-                    Plant: Penang
-                    <br />
-                </h2>
-            </td>
-        </tr>
-        <tr>
-            <td colspan="2" style="text-align:right">
-                <h2>
-                    *Symbol here*                    
-                    <br />
-                    <br />
-                </h2>
-            </td>
-        </tr>
-        <tr>
-            <td colspan="2">
-                <table border="1" style="width:700px;">
-                    <tr>
-                        <td style="text-align: center;">
-                            <b>
-                                Evaluation Period
-                            </b>
-                        </td>
-                        <td style="text-align: center;">
-                            <b>
-                                *Month here*
-                            </b>
-                        </td>
-                    </tr>
-                </table>
-                <br />
-                <br />
-           </td>
-        </tr>
-        <tr>
-            <td colspan="2">
-                <h2>
-                    Evaluation Team (Monthly)
-                    <br />
-                </h2>
-            </td>
-        </tr>
-        <tr>
-            <td colspan="2">
-                <br />
-                <br />
-                <table border="1" style="width:700px">
-                    <tr>
-                        <td style="text-align: center;">
-                            <h3>Quality</h3>
-                        </td>
-                        <td style="text-align: center">
-                            <h3>
-                                *Names here*
-                            </h3>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td style="text-align: center;">
-                            <h3>Responsiveness</h3>
-                        </td>
-                        <td style="text-align: center">
-                            <h3>
-                                *Names here*
-                            </h3>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td style="text-align: center;">
-                            <h3>Delivery</h3>
-                        </td>
-                        <td style="text-align: center">
-                            <h3>
-                                *Names here*
-                            </h3>
-                        </td>
-                    </tr>
-                </table>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <br />
-                <br />
-                <table style="width:300px" border="1">
-                    <tr>
-                        <td style="text-align: center">
-                            <b>
-                                PROCESS AREA
-                            </b>
-                        </td>
-                        <td style="text-align: center">
-                            <b>
-                                NET SCORE FROM SECTIONS
-                            </b>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td style="text-align: center">
-                            <b>
-                                Quality
-                            </b>
-                        </td>
-                        <td style="text-align: center">
-                            <b>
-                                *Score here*
-                            </b>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td style="text-align: center">
-                            <b>
-                                Responsiveness
-                            </b>
-                        </td>
-                        <td style="text-align: center">
-                            <b>
-                                *Score here*
-                            </b>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td style="text-align: center">
-                            <b>
-                                Delivery
-                            </b>
-                        </td>
-                        <td style="text-align: center">
-                            <b>
-                                *Score here*
-                            </b>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td style="text-align: center">
-                            <b>
-                                Business
-                            </b>
-                        </td>
-                        <td style="text-align: center">
-                            <b>
-                                *Score here*
-                            </b>
-                        </td>
-                    </tr>
-                </table>
-            </td>
-            <td>
-                <br />
-                <br />
-                <table style="width:300px" border="1">
-                    <tr>
-                        <td style="text-align: center">
-                            <b>
-                                WEIGHTING FACTOR
-                            </b>
-                        </td>
-                        <td style="text-align: center">
-                            <b>
-                               CUSTOMERS SCORE
-                            </b>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td style="text-align: center">
-                            <b>
-                                28%
-                            </b>
-                        </td>
-                        <td style="text-align: center">
-                            <b>
-                                *Score here*
-                            </b>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td style="text-align: center">
-                            <b>
-                                28%
-                            </b>
-                        </td>
-                        <td style="text-align: center">
-                            <b>
-                                *Score here*
-                            </b>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td style="text-align: center">
-                            <b>
-                                28%
-                            </b>
-                        </td>
-                        <td style="text-align: center">
-                            <b>
-                                *Score here*
-                            </b>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td style="text-align: center">
-                            <b>
-                               15%
-                            </b>
-                        </td>
-                        <td style="text-align: center">
-                            <b>
-                                *Score here*
-                            </b>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td style="text-align: center">
+﻿<%@ Page Title="Summary Page | Keysight Technologies" Language="C#" MasterPageFile="~/Template.Master" AutoEventWireup="true" CodeBehind="Summary.aspx.cs" Inherits="KeysightMOR.Summary" %>
 
-                        </td>
-                        <td style="text-align: center">
-                            <b>
-                                *Score here*
-                            </b>
-                        </td>
-                    </tr>
-                </table>
-            </td>
-        </tr>
-    </table>
-</div>
-              </div>
-         </div>               
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+    <link rel="stylesheet" href="../Assets/Stylesheets/ReportView/Summary.css" />
 </asp:Content>
+
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+    <div id="wrapper">
+       <asp:Button ID="back_to_report" runat="server" Text="Back" class="back_btn" OnClick="back_to_report_Click" />
+       <p style="text-align:center"><asp:Label runat="server" ID="error_Msg" CssClass="error_Msg" /></p>
+         
+        <table class="summarysheet_table" cellspacing="0">
+            <tr>
+                <td id="head" colspan="4">Monthly/Annual Operational Review Scorecard<br />
+                    Minimum Acceptable Target 3.3 by Scoring Category</td>
+            </tr>
+            <tr>
+                <td colspan="4">SUPPLIER: 
+                    <asp:Label runat="server" ID="Report_CM" /><br/>PLANT: 
+                    <asp:Label runat="server" ID="Report_Plant" /></td>
+            </tr>
+            <tr>
+                <td colspan="4">
+                    <img class="logo" src="../Assets/Images/Keysight_Technologies_Logo.png" /></td>
+            </tr>
+            <tr>
+                <td class="auto-style1">Evaluation Date</td>
+                <td><asp:Label runat="server" ID="EvaluationDate" /></td>
+            </tr>
+            <tr>
+                <td colspan="4">
+                    <table cellspacing="0">
+                        <tr>
+                            <td class="clr_1">PROCESS AREA</td>
+                            <td class="clr_2">NET SCORE FROM SECTIONS</td>
+                            <td class="clr_1">WEIGHTING FACTOR</td>
+                            <td class="clr_2">CUSTOMER SCORE</td>
+                        </tr>
+                        <tr>
+                            <td class="q_clr">Quality</td>
+                            <td style="text-align:center"><asp:Label runat="server" ID="Q_Score" /></td>
+                            <td style="text-align:center">28%</td>
+                            <td style="text-align:center"><asp:Label runat="server" ID="Q_FinalScore" /></td>
+                        </tr>
+                        <tr>
+                            <td class="r_clr">Responsiveness</td>
+                            <td style="text-align:center"><asp:Label runat="server" ID="R_Score" /></td>
+                            <td style="text-align:center">28%</td>
+                            <td style="text-align:center"><asp:Label runat="server" ID="R_FinalScore" /></td>
+                        </tr>
+                        <tr>
+                            <td class="d_clr">Delivery</td>
+                            <td style="text-align:center"><asp:Label runat="server" ID="D_Score" /></td>
+                            <td style="text-align:center">28%</td>
+                            <td style="text-align:center"><asp:Label runat="server" ID="D_FinalScore" /></td>
+                        </tr>
+                        <tr>
+                            <td class="b_clr">Business</td>
+                            <td style="text-align:center"><asp:Label runat="server" ID="B_Score" /></td>
+                            <td style="text-align:center">15%</td>
+                            <td style="text-align:center"><asp:Label runat="server" ID="B_FinalScore" /></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2"></td>
+
+                            <td class="total_clr">Total</td>
+                            <td style="text-align:center"><asp:Label runat="server" ID="Score" /></td>
+                        </tr>
+                    </table>
+                    </td>
+            </tr>
+            <tr>
+                <td colspan="4" class="evalteam_clr">
+                    <center>EVALUATION TEAM (Monthly)</center>
+                </td>
+            </tr>
+            <tr>
+                <td class="auto-style2">Responsiveness</td>
+                <td colspan="3"><asp:Label runat="server" ID="R_Team" /></td>
+            </tr>
+            <tr>
+                <td class="auto-style3">Delivery</td>
+                <td colspan="3"><asp:Label runat="server" ID="D_Team" /></td>
+            </tr>
+            <tr>
+                <td class="auto-style4">Business</td>
+                <td colspan="3"><asp:Label runat="server" ID="B_Team" /></td>
+            </tr>
+        </table>
+    </div>
+</asp:Content>
+

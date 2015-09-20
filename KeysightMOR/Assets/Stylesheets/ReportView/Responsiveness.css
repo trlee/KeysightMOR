@@ -20,7 +20,11 @@
     text-align: center;
     width: 40%;
 }
-
+.error_Msg{
+    text-align:center;
+    align-items:center;
+    color: #FF0000;
+}
 .responsiveness-score-achieved {
     text-align: center;
     width: 30%;
@@ -102,4 +106,9 @@ td {
     text-align: center;
     height: 25px;
     line-height: 25px;
+}
+
+.gridViewComment{
+    width:250px;
+    text-align:left;
 }

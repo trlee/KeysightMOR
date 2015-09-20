@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Template.Master" AutoEventWireup="true" CodeBehind="SelectReport.aspx.cs" Inherits="KeysightMOR.SelectReport" %>
+﻿<%@ Page Title="Select Report | Keysight Technologies" Language="C#" MasterPageFile="~/Template.Master" AutoEventWireup="true" CodeBehind="SelectReport.aspx.cs" Inherits="KeysightMOR.SelectReport" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <link rel="stylesheet" href="../Assets/Stylesheets/ReportView/SelectReport.css" />
 </asp:Content>
@@ -55,6 +55,7 @@
                                 <td colspan="5">
                                     <%-- Empty space intended --%>
                                     <br />
+                                    <p style="text-align:center"><asp:Label runat="server" ID="error_Msg" CssClass="error_Msg" /></p>
                                     <br />
                                 </td>
                             </tr>

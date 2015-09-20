@@ -17,7 +17,7 @@ namespace KeysightMOR.ControlPanel
             if (!IsPostBack)
             {
                 InitDropDownList();
-                DisableSelection();
+                // DisableSelection();
             }
         }
 
@@ -30,13 +30,13 @@ namespace KeysightMOR.ControlPanel
             // Populate the Month dropdownlist from January to December
             for (int i = 1; i < 13; i++)
             {
-                Month.Items.Add(new ListItem(monthinfo.GetMonthName(i), i.ToString()));
+                ddlMonth.Items.Add(new ListItem(monthinfo.GetMonthName(i), i.ToString()));
             }
 
             // Populate the Year dropdownlist from current year to 5 years after it
             for (int year = currentYear; year <= currentYear + 5; year++)
             {
-                Year.Items.Add(new ListItem((year).ToString(), year.ToString()));
+                ddlYear.Items.Add(new ListItem((year).ToString(), year.ToString()));
             }
 
             /////////////////////////////////////////////////////////////////////////////////
@@ -53,11 +53,11 @@ namespace KeysightMOR.ControlPanel
 
                     SqlCommand cmd = new SqlCommand(SqlRetrieveCmQuery, conn);
 
-                    CM.DataSource = cmd.ExecuteReader();
-                    CM.DataTextField = "CMName";
-                    CM.DataValueField = "CMId";
+                    ddlCM.DataSource = cmd.ExecuteReader();
+                    ddlCM.DataTextField = "CMName";
+                    ddlCM.DataValueField = "CMId";
 
-                    CM.DataBind();
+                    ddlCM.DataBind();
                 }
                 catch (Exception ex)
                 {
@@ -71,63 +71,67 @@ namespace KeysightMOR.ControlPanel
         // Disables the selection for Month and Year by default
         private void DisableSelection()
         {
-            Month.Enabled = false;
-            Year.Enabled = false;
+            ddlMonth.Enabled = false;
+            ddlYear.Enabled = false;
         }
 
         protected void CM_SelectedIndexChanged(object sender, EventArgs e)
         {
             // As long the selected value is not "Pick CM", set Month dropdownlist to be selectable 
-            if (CM.SelectedValue != "-1")
-            {
-                Month.Enabled = true;
-            }
-            else
-            {
-                DisableSelection();
+            //if (ddlCM.SelectedValue != "-1")
+            //{
+            //    ddlMonth.Enabled = true;
+            //}
+            //else
+            //{
+            //    DisableSelection();
 
-            }
+            //}
         }
 
         protected void Month_SelectedIndexChanged(object sender, EventArgs e)
         {
             // As long the selected value is not "Pick Month" & "Pick CM", set Month dropdownlist to be selectable
-            if (CM.SelectedValue != "-1" && Month.SelectedValue != "=1")
-            {
-                Year.Enabled = true;
-            }
-            else if (CM.SelectedValue == "-1")
-            {
-                Month.SelectedIndex = 0;
-                DisableSelection();
-            }
+            //if (ddlCM.SelectedValue != "-1" && ddlMonth.SelectedValue != "=1")
+            //{
+            //    ddlYear.Enabled = true;
+            //}
+            //else if (ddlCM.SelectedValue == "-1")
+            //{
+            //    ddlMonth.SelectedIndex = 0;
+            //    DisableSelection();
+            //}
         }
 
         protected void Year_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (CM.SelectedValue != "-1" && Month.SelectedValue != "-1" && Year.SelectedValue != "-1")
-            {
-                // Do code...
-            }
-            else if (CM.SelectedValue != "-1" && Month.SelectedValue == "-1")
-            {
-                Year.Enabled = false;
-            }
-            else if (CM.SelectedValue == "-1")
-            {
-                DisableSelection();
-                Month.SelectedIndex = 0;
-                Year.SelectedIndex = 0;
-            }
+            //if (ddlCM.SelectedValue != "-1" && ddlMonth.SelectedValue != "-1" && ddlYear.SelectedValue != "-1")
+            //{
+            //    // Do code...
+            //}
+            //else if (ddlCM.SelectedValue != "-1" && ddlMonth.SelectedValue == "-1")
+            //{
+            //    ddlYear.Enabled = false;
+            //}
+            //else if (ddlCM.SelectedValue == "-1")
+            //{
+            //    ddlMonth.SelectedIndex = 0;
+            //    ddlYear.SelectedIndex = 0;
+            //}
         }
 
         protected void Select_Click(object sender, EventArgs e)
         {
             if (Page.IsValid)
             {
-                // store selection into session
+                string URL = "DeliveryEditScore.aspx?";
+                string CM = ddlCM.SelectedItem.Value;
+                string month = ddlMonth.SelectedItem.Value;
+                string year = ddlYear.SelectedItem.Value;
 
-                Response.Redirect("DeliveryEditScore.aspx");
+                string redirectURL = URL + "CM=" + CM + "&" + "Month=" + month + "&" + "Year=" + year;
+
+                Response.Redirect(redirectURL);
             }
         }
 
@@ -135,6 +139,21 @@ namespace KeysightMOR.ControlPanel
         {
             // do some more code...
             Response.Redirect("~/ControlPanel/Index.aspx");
+        }
+
+        protected void btnSubmit_Click(object sender, EventArgs e)
+        {
+            if (Page.IsValid)
+            {
+                string URL = "~/ControlPanel/DeliveryScoreViewEdit.aspx?";
+                string CM = ddlCM.SelectedItem.Value;
+                string month = ddlMonth.SelectedItem.Value;
+                string year = ddlYear.SelectedItem.Value;
+
+                string redirectURL = URL + "CM=" + CM + "&" + "Month=" + month + "&" + "Year=" + year;
+
+                Response.Redirect(redirectURL);
+            }
         }
     }
 }

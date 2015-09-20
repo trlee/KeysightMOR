@@ -44,7 +44,7 @@ namespace KeysightMOR.ReportView
             }
             catch (Exception ex)
             {
-                Response.Write(ex.ToString());
+                error_Msg.Text = "Some error(s) occur while retrieving full report";
             }
 
             
@@ -107,6 +107,7 @@ namespace KeysightMOR.ReportView
                             b2_totalscore = b2_score * 0.5;
                             b2_totalscorelbl.Text = b2_totalscore.ToString("0.00");
                             b_score = b1_totalscore + b2_totalscore;
+                            Math.Round(b_score, 2);
                             B_score.Text = b_score.ToString("0.00");
                         }
                     }
@@ -114,7 +115,7 @@ namespace KeysightMOR.ReportView
             }
             catch (Exception ex)
             {
-                Response.Write(ex.ToString());
+                error_Msg.Text = "Some error(s) occur while retrieving full report";
             }
         }//End page load
 
@@ -251,7 +252,7 @@ namespace KeysightMOR.ReportView
             }//End try
             catch (Exception ex)
             {
-                Response.Write(ex.ToString());
+                error_Msg.Text = "Some error(s) occur while retrieving full report";
             }
         }//End getComment()
     }//End class

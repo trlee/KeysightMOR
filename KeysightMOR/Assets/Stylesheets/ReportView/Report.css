@@ -14,7 +14,11 @@
     -webkit-box-shadow: 0px 3px 6px #c9c9c9;
     box-shadow: 0px 3px 6px #c9c9c9;
 }
-
+.error_Msg{
+    text-align:center;
+    align-items:center;
+    color: #FF0000;
+}
 fieldset {
     background-color: #fff;
     border: none;

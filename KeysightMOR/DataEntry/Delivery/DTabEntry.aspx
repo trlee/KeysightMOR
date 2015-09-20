@@ -98,29 +98,29 @@
                 <asp:TableRow>
                     <asp:TableCell>a) Act del vs req (CRD %)</asp:TableCell>
                     <asp:TableCell CssClass="cell_item">
-                        <asp:TextBox ID="D1_1" runat="server" CssClass="txtbox" Width="50"></asp:TextBox>                            
-                        <asp:RangeValidator ID="RangeValidator1" ControlToValidate="D1_1" MinimumValue="0" MaximumValue="100" Type="Integer" runat="server" ErrorMessage="Enter a value from 0 to 100" ForeColor="Red" Font-Size="X-Small"></asp:RangeValidator>
+                        <asp:TextBox ID="D1_1" runat="server" CssClass="txtbox" Width="50" ></asp:TextBox>                            
+                        <asp:RangeValidator ID="RangeValidator1" ControlToValidate="D1_1" MinimumValue="0" MaximumValue="100" Type="Double" runat="server" ErrorMessage="Enter a value from 0 to 100" ForeColor="Red" Font-Size="X-Small"></asp:RangeValidator>
                     </asp:TableCell>
                 </asp:TableRow>
                 <asp:TableRow>
                     <asp:TableCell>b) Act del vs comm (OTD %)</asp:TableCell>
                     <asp:TableCell CssClass="cell_item">
                         <asp:TextBox ID="D1_2" runat="server" CssClass="txtbox" Width="50"></asp:TextBox>
-                        <asp:RangeValidator ID="RangeValidator2" ControlToValidate="D1_2" MinimumValue="0" MaximumValue="100" Type="Integer" runat="server" ErrorMessage="Enter a value from 0 to 100" ForeColor="Red" Font-Size="X-Small"></asp:RangeValidator>                      
+                        <asp:RangeValidator ID="RangeValidator2" ControlToValidate="D1_2" MinimumValue="0" MaximumValue="100" Type="Double" runat="server" ErrorMessage="Enter a value from 0 to 100" ForeColor="Red" Font-Size="X-Small"></asp:RangeValidator>                      
                     </asp:TableCell>
                 </asp:TableRow>
                 <asp:TableRow>
                     <asp:TableCell>c) Commit vs req (Commit %)</asp:TableCell>
                     <asp:TableCell CssClass="cell_item">
                         <asp:TextBox ID="D1_3" runat="server" CssClass="txtbox" Width="50"></asp:TextBox>
-                        <asp:RangeValidator ID="RangeValidator3" ControlToValidate="D1_3" MinimumValue="0" MaximumValue="100" Type="Integer" runat="server" ErrorMessage="Enter a value from 0 to 100" ForeColor="Red" Font-Size="X-Small"></asp:RangeValidator>               
+                        <asp:RangeValidator ID="RangeValidator3" ControlToValidate="D1_3" MinimumValue="0" MaximumValue="100" Type="Double" runat="server" ErrorMessage="Enter a value from 0 to 4" ForeColor="Red" Font-Size="X-Small"></asp:RangeValidator>               
                     </asp:TableCell>
                 </asp:TableRow>
                 <asp:TableRow>
                     <asp:TableCell>d) Exception Commit (Exception %)</asp:TableCell>
                     <asp:TableCell CssClass="cell_item">
                         <asp:TextBox ID="D1_4" runat="server" CssClass="txtbox" Width="50"></asp:TextBox>
-                        <asp:RangeValidator ID="RangeValidator4" ControlToValidate="D1_4" MinimumValue="0" MaximumValue="100" Type="Integer" runat="server" ErrorMessage="Enter a value from 0 to 100" ForeColor="Red" Font-Size="X-Small"></asp:RangeValidator>
+                        <asp:RangeValidator ID="RangeValidator4" ControlToValidate="D1_4" MinimumValue="0" MaximumValue="100" Type="Double" runat="server" ErrorMessage="Enter a value from 0 to 4" ForeColor="Red" Font-Size="X-Small"></asp:RangeValidator>
                     </asp:TableCell>
                 </asp:TableRow>
                 <asp:TableRow>
@@ -131,21 +131,21 @@
                     <asp:TableCell>a) Act del vs po (CRD %)</asp:TableCell>
                     <asp:TableCell CssClass="cell_item">
                         <asp:TextBox ID="D2_1" runat="server" CssClass="txtbox" Width="50"></asp:TextBox>
-                        <asp:RangeValidator ID="RangeValidator5" ControlToValidate="D2_1" MinimumValue="0" MaximumValue="100" Type="Integer" runat="server" ErrorMessage="Enter a value from 0 to 100" ForeColor="Red" Font-Size="X-Small"></asp:RangeValidator>
+                        <asp:RangeValidator ID="RangeValidator5" ControlToValidate="D2_1" MinimumValue="0" MaximumValue="100" Type="Double" runat="server" ErrorMessage="Enter a value from 0 to 4" ForeColor="Red" Font-Size="X-Small"></asp:RangeValidator>
                     </asp:TableCell>
                 </asp:TableRow>
                 <asp:TableRow>
                     <asp:TableCell>b) Commit vs req (Commit %)</asp:TableCell>
                     <asp:TableCell CssClass="cell_item">
                         <asp:TextBox ID="D2_2" runat="server" CssClass="txtbox" Width="50"></asp:TextBox>
-                        <asp:RangeValidator ID="RangeValidator6" ControlToValidate="D2_2" MinimumValue="0" MaximumValue="4" Type="Integer" runat="server" ErrorMessage="Enter a value from 0 to 100" ForeColor="Red" Font-Size="X-Small"></asp:RangeValidator>
+                        <asp:RangeValidator ID="RangeValidator6" ControlToValidate="D2_2" MinimumValue="0" MaximumValue="4" Type="Double" runat="server" ErrorMessage="Enter a value from 0 to 4" ForeColor="Red" Font-Size="X-Small"></asp:RangeValidator>
                     </asp:TableCell>
                 </asp:TableRow>
                 <asp:TableRow>
                     <asp:TableCell>c) Exception Commit (Exception %)</asp:TableCell>
                     <asp:TableCell CssClass="cell_item">
                         <asp:TextBox ID="D2_3" runat="server" CssClass="txtbox" Width="50"></asp:TextBox>
-                        <asp:RangeValidator ID="RangeValidator7" ControlToValidate="D2_3" MinimumValue="0" MaximumValue="4" Type="Integer" runat="server" ErrorMessage="Enter a value from 0 to 100" ForeColor="Red" Font-Size="X-Small"></asp:RangeValidator>
+                        <asp:RangeValidator ID="RangeValidator7" ControlToValidate="D2_3" MinimumValue="0" MaximumValue="4" Type="Double" runat="server" ErrorMessage="Enter a value from 0 to 4" ForeColor="Red" Font-Size="X-Small"></asp:RangeValidator>
                     </asp:TableCell>
                 </asp:TableRow>
             </asp:Table>

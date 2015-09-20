@@ -24,30 +24,25 @@
         </h2>
 
         <fieldset>
+            <p>
+                <asp:Label ID="lblStatus" runat="server" Text="" ForeColor="Red"></asp:Label>
+            </p>
                 
                 <p>
                     Contract Manufacturer : 
                 </p>
             <p>
-   <asp:DropDownList ID="CM" runat="server" class="dropdown">
-                            <asp:ListItem>Agilent</asp:ListItem>
-                            <asp:ListItem>Jabil</asp:ListItem>
-                            <asp:ListItem>Intel</asp:ListItem>
-                            <asp:ListItem>Keysight</asp:ListItem>
-                            <asp:ListItem>HP</asp:ListItem>
+                            <asp:DropDownList ID="CM" runat="server" class="dropdown">
                             </asp:DropDownList>
 
             </p>
             <p> <!--- temporary solution until further decisions are made--->
-   <asp:DropDownList ID="DropDownList2" runat="server" class="dropdown_2">
-                            <asp:ListItem>Responsiveness</asp:ListItem>
-                            <asp:ListItem>Delivery</asp:ListItem>
-                            
+   <asp:DropDownList ID="RespDev" runat="server" class="dropdown" AutoPostBack="true" OnSelectedIndexChanged="RespDev_Changed">                            
                             </asp:DropDownList>
 
             </p>
                 <p>
-                    <asp:Button ID="Submit" runat="server" Text="Submit" class="action-button hvr-radial-out" />
+                    <asp:Button ID="Submit" runat="server" Text="Submit" class="action-button hvr-radial-out" OnClick="Submit_Click"/>
                     &nbsp;&nbsp;
                     <asp:Button ID="Cancel" runat="server" Text="Cancel" class="cancel_button" PostBackUrl="~/ControlPanel/Index.aspx"/>
                 </p>
