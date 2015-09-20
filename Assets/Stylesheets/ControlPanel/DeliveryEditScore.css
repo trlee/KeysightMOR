@@ -1,0 +1,81 @@
+﻿ .this_box
+   {
+            margin:30px 10% 30px 10%;
+            align-content: center;
+            background-color: #fff; 
+            color: #000; 
+            font-size: 16px;
+            width: 80%; 
+              height: auto;        
+            -moz-box-shadow: 0px 3px 6px #c9c9c9;
+            -webkit-box-shadow: 0px 3px 6px #c9c9c9;
+            box-shadow: 0px 3px 6px #c9c9c9;
+
+   }
+.selectCM_table td
+     {
+ 
+            background-color: #fff;
+            text-overflow: initial;
+            text-align: center;
+			overflow: auto;
+            align-content: center;
+          
+            border: none;
+     }
+     .this_table
+ {
+     width:95%; 
+            background-color: #fff;
+            text-overflow: initial;
+            text-align: left;
+			overflow: auto;
+            margin-bottom: 10px;
+            margin-top: 10px;
+           margin-left: 20px;
+            align-content: center;
+            border-collapse: separate;
+            border-spacing: 0px;
+            border: none;
+ }
+     .cell_item
+        {
+            text-align:center;
+            padding: 3px;
+        }
+
+        td {
+            background-color: #fff;
+            border: 1px #e7e7e7;
+            border-style: solid;   
+        }
+
+        .div_button
+        {
+            text-align: right;
+        }
+        h3
+        {
+            color: #fff;
+            background-color: #6BB9F0;
+            text-align: center;
+            line-height: 30px;
+            height: 30px;
+            font-size:18px;
+        }
+        
+        /*-----------TextBoxes----------*/
+        .txtbox
+        {
+            width:60px;
+              padding: 5px;
+              border: solid 5px #c9c9c9;
+              transition: border 0.3s;
+        }
+
+        .txtbox:focus
+         {
+                border-radius: 20px 20px;
+                border: solid 5px #808080;
+        }
+        /*---------------------------------------*/
