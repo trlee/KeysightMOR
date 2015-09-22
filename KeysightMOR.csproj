@@ -51,6 +51,8 @@
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Web.DataVisualization" />
+    <Reference Include="System.Web.DataVisualization.Design" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -101,6 +103,7 @@
     <Content Include="Assets\Stylesheets\Home.css" />
     <Content Include="Assets\Stylesheets\hover.css" />
     <Content Include="Assets\Stylesheets\LoginAuth\ForgotPassword.css" />
+    <Content Include="Assets\Stylesheets\PreHome.css" />
     <Content Include="Assets\Stylesheets\ReportView\Business.css" />
     <Content Include="Assets\Stylesheets\ReportView\Delivery.css" />
     <Content Include="Assets\Stylesheets\ReportView\Graph.css" />
@@ -140,6 +143,7 @@
     <Content Include="DataEntry\Responsiveness\R2TabEntry.aspx" />
     <Content Include="DataEntry\Responsiveness\R3TabEntry.aspx" />
     <Content Include="ControlPanel\DeliverySelectEditScore.aspx" />
+    <Content Include="Home.aspx" />
     <Content Include="LoginAuth\ForgotPassword.aspx" />
     <Content Include="logo.ico" />
     <Content Include="LogOut.aspx" />
@@ -176,7 +180,6 @@
     <Content Include="Web.sitemap" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Home.aspx" />
     <Content Include="Assets\Stylesheets\style.css" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>

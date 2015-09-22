@@ -26,6 +26,7 @@
         <br />
         <div >
             <asp:Chart ID="Chart1" runat="server" Width="1000px" Height="500px"></asp:Chart>
+            
         </div>
         
     </div></div>
