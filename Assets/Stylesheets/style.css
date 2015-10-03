@@ -145,10 +145,9 @@ body {
 }
 
 #topmenu {
-    width:400px;
 	display:block;
 	list-style:none;
-	padding:0 0px 0px 0px;
+	padding-right:50px;
 	float: right;
     background:#FFFFFF;
     height:37px;
@@ -163,7 +162,7 @@ body {
 	margin:0px 0px 0px 0px;
 	text-decoration:none;
 	padding:9px 15px 0px 15px;
-	text-align:center;
+	text-align:left;
 }
 #topmenu a, #topmenu a:visited, #topmenu a:active {
 	color:#000000;

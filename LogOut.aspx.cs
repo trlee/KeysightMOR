@@ -11,16 +11,6 @@ namespace KeysightMOR
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            ClearSession();
-            
-        }
-
-        private void ClearSession()
-        {
-            Session["userid"] = "";
-            Session["username"] = "";
-
-            Response.Redirect("~/SignIn.aspx");
         }
     }
 }
