@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace KeysightMOR {
+namespace KeysightMOR.ReportView {
     
     
     public partial class Summary {

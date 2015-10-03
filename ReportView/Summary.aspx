@@ -1,4 +1,4 @@
-﻿<%@ Page Title="Summary Page | Keysight Technologies" Language="C#" MasterPageFile="~/Template.Master" AutoEventWireup="true" CodeBehind="Summary.aspx.cs" Inherits="KeysightMOR.Summary" %>
+﻿<%@ Page Title="Summary Page | Keysight Technologies" Language="C#" MasterPageFile="~/Template.Master" AutoEventWireup="true" CodeBehind="Summary.aspx.cs" Inherits="KeysightMOR.ReportView.Summary" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <link rel="stylesheet" href="../Assets/Stylesheets/ReportView/Summary.css" />
