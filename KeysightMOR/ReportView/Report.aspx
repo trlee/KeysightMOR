@@ -25,7 +25,7 @@
                     <tr>
                         <td>
                             <asp:HyperLink ID="HyperLink2" runat="server">
-                                <asp:Button ID="Button2" runat="server" Text="Graph" class="btn" />
+                                <asp:Button ID="Button2" runat="server" Text="Graph" class="btn" PostBackUrl="~/ReportView/Graph.aspx" />
                             </asp:HyperLink>
                         </td>
                     </tr>

@@ -49,6 +49,24 @@ namespace KeysightMOR {
         protected global::System.Web.UI.WebControls.HyperLink hlLogo;
         
         /// <summary>
+        /// testing control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label testing;
+        
+        /// <summary>
+        /// navbar_admin control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl navbar_admin;
+        
+        /// <summary>
         /// hlAdmin control.
         /// </summary>
         /// <remarks>
@@ -58,13 +76,13 @@ namespace KeysightMOR {
         protected global::System.Web.UI.WebControls.HyperLink hlAdmin;
         
         /// <summary>
-        /// hlDataEntry control.
+        /// navbar_report control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.HyperLink hlDataEntry;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl navbar_report;
         
         /// <summary>
         /// hlReport control.
@@ -76,6 +94,33 @@ namespace KeysightMOR {
         protected global::System.Web.UI.WebControls.HyperLink hlReport;
         
         /// <summary>
+        /// navbar_evaluate control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl navbar_evaluate;
+        
+        /// <summary>
+        /// hlDataEntry control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.HyperLink hlDataEntry;
+        
+        /// <summary>
+        /// navbar_setting control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl navbar_setting;
+        
+        /// <summary>
         /// hlSettings control.
         /// </summary>
         /// <remarks>
@@ -85,13 +130,22 @@ namespace KeysightMOR {
         protected global::System.Web.UI.WebControls.HyperLink hlSettings;
         
         /// <summary>
+        /// navbar_logout control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl navbar_logout;
+        
+        /// <summary>
         /// hlLogOut control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.HyperLink hlLogOut;
+        protected global::System.Web.UI.WebControls.LinkButton hlLogOut;
         
         /// <summary>
         /// ContentPlaceHolder1 control.

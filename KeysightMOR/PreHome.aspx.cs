@@ -16,7 +16,7 @@ namespace KeysightMOR
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            if (!Page.IsPostBack)
+            if (!IsPostBack)
             {
                 getCM();
                 //getdivision();
@@ -28,7 +28,7 @@ namespace KeysightMOR
             Session["UserID"] = 1;
             string userid = Session["UserID"].ToString();
             SqlConnection sqlConn = new SqlConnection(Shared.SqlConnString);
-            SqlCommand getCM = new SqlCommand("SELECT DISTINCT UC.CMID, CM.CMName FROM UserCriteria UC, UserDivID UDI, CM CM WHERE UC.UserDivID = UDI.UserDivID AND UC.CMID = CM.CMID AND UDI.UserID = '" + userid + "'", sqlConn);
+            SqlCommand getCM = new SqlCommand("SELECT DISTINCT UC.CMID, CM.CMName FROM UserCriteria UC, UserDivID UDI, CM CM WHERE UC.UserDivID = UDI.UserDivID AND UC.CMID = CM.CMID AND UDI.UserID = " + userid + "", sqlConn);
             SqlDataAdapter da = new SqlDataAdapter(getCM);
             DataSet ds = new DataSet();
             da.Fill(ds);
@@ -44,10 +44,12 @@ namespace KeysightMOR
         {
             SqlConnection sqlConn = new SqlConnection(Shared.SqlConnString);
             SqlCommand getdivision = new SqlCommand("SELECT DISTINCT UDI.DivID, D.DivName FROM UserDivID UDI, UserCriteria UC, Division D WHERE UDI.DivID = D.DivID AND UDI.UserDivID = UC.UserDivID AND UDI.UserID = 1 AND UC.CMID = @selectedcm", sqlConn);
+
             getdivision.Parameters.AddWithValue("@selectedcm", CM.SelectedItem.Value.ToString());
             SqlDataAdapter getdiv = new SqlDataAdapter(getdivision);
             DataSet setdiv = new DataSet();
             getdiv.Fill(setdiv);
+
             Division.DataSource = setdiv.Tables[0];
             Division.DataValueField = "DivID";
             Division.DataTextField = "DivName";
@@ -68,7 +70,7 @@ namespace KeysightMOR
                 {
                     try
                     {
-                        SqlCommand getUserDivIDCmd = new SqlCommand("SELECT UserDivID FROM dbo.[UserDivID] WHERE UserID = '" + Session["UserID"] + "' AND DivID = '" + Session["SelectedDivisionID"] + "' ", sqlConn);
+                        SqlCommand getUserDivIDCmd = new SqlCommand("SELECT UserDivID FROM dbo.[UserDivID] WHERE UserID = " + Session["UserID"].ToString() + " AND DivID = " + Session["SelectedDivisionID"].ToString() + "; ", sqlConn);
                         sqlConn.Open();
 
                         SqlDataReader reader = getUserDivIDCmd.ExecuteReader();

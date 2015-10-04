@@ -51,6 +51,8 @@
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Web.DataVisualization" />
+    <Reference Include="System.Web.DataVisualization.Design" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -101,6 +103,7 @@
     <Content Include="Assets\Stylesheets\Home.css" />
     <Content Include="Assets\Stylesheets\hover.css" />
     <Content Include="Assets\Stylesheets\LoginAuth\ForgotPassword.css" />
+    <Content Include="Assets\Stylesheets\PreHome.css" />
     <Content Include="Assets\Stylesheets\ReportView\Business.css" />
     <Content Include="Assets\Stylesheets\ReportView\Delivery.css" />
     <Content Include="Assets\Stylesheets\ReportView\Graph.css" />
@@ -123,6 +126,7 @@
     <Content Include="ControlPanel\DeliveryUser.aspx" />
     <Content Include="ControlPanel\DeliveryUserViewEdit.aspx" />
     <Content Include="ControlPanel\EditUser.aspx" />
+    <Content Include="ControlPanel\EvaluationSetting.aspx" />
     <Content Include="ControlPanel\Index.aspx" />
     <Content Include="ControlPanel\DeliveryScore.aspx" />
     <Content Include="ControlPanel\DeliveryScoreViewEdit.aspx" />
@@ -147,19 +151,28 @@
     <Content Include="ProfileSettings.aspx" />
     <Content Include="ControlPanel\Quality.aspx" />
     <Content Include="ControlPanel\QualityScoreViewEdit.aspx" />
+    <Content Include="ReportView\Business.css" />
+    <Content Include="ReportView\Delivery.css" />
+    <Content Include="ReportView\Graph.css" />
     <Content Include="ReportView\Report.aspx" />
     <Content Include="ReportView\Business.aspx" />
     <Content Include="ReportView\Delivery.aspx" />
     <Content Include="ReportView\Graph.aspx" />
+    <Content Include="ReportView\Report.css" />
     <Content Include="ReportView\Responsiveness.aspx" />
     <Content Include="ControlPanel\ResponsivenessSelectEditScore.aspx" />
+    <Content Include="ReportView\Responsiveness.css" />
     <Content Include="ReportView\SelectReport.aspx" />
     <Content Include="packages.config" />
+    <Content Include="Home.aspx" />
     <None Include="Scripts\jquery-2.1.4.intellisense.js" />
+    <Content Include="ReportView\SelectReport.css" />
     <Content Include="ReportView\Summary.aspx" />
+    <Content Include="ReportView\Summary.css" />
     <Content Include="Scripts\jquery-2.1.4.js" />
     <Content Include="Scripts\jquery-2.1.4.min.js" />
     <Content Include="SignIn.aspx" />
+    <Content Include="style.css" />
     <Content Include="Template.Master" />
     <Content Include="Assets\Font\Lato-Light.ttf" />
     <Content Include="Assets\Font\Lato-Regular.ttf" />
@@ -176,7 +189,6 @@
     <Content Include="Web.sitemap" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Home.aspx" />
     <Content Include="Assets\Stylesheets\style.css" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
@@ -281,6 +293,13 @@
     </Compile>
     <Compile Include="ControlPanel\EditUser.aspx.designer.cs">
       <DependentUpon>EditUser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ControlPanel\EvaluationSetting.aspx.cs">
+      <DependentUpon>EvaluationSetting.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControlPanel\EvaluationSetting.aspx.designer.cs">
+      <DependentUpon>EvaluationSetting.aspx</DependentUpon>
     </Compile>
     <Compile Include="ControlPanel\Index.aspx.cs">
       <DependentUpon>Index.aspx</DependentUpon>
@@ -401,13 +420,6 @@
     <Compile Include="ControlPanel\DeliverySelectEditScore.aspx.designer.cs">
       <DependentUpon>DeliverySelectEditScore.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Home.aspx.cs">
-      <DependentUpon>Home.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Home.aspx.designer.cs">
-      <DependentUpon>Home.aspx</DependentUpon>
-    </Compile>
     <Compile Include="LoginAuth\ForgotPassword.aspx.cs">
       <DependentUpon>ForgotPassword.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -527,6 +539,13 @@
     </Compile>
     <Compile Include="Template.Master.designer.cs">
       <DependentUpon>Template.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Home.aspx.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Home.aspx.designer.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
