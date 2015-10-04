@@ -1,0 +1,257 @@
+﻿        .this_box {
+            margin: 30px auto 30px auto;
+            background-color: #fff;
+            color: #000;
+            font-size: 16px;
+            width: 600px;
+            height: auto;
+            -moz-box-shadow: 0px 3px 6px #c9c9c9;
+            -webkit-box-shadow: 0px 3px 6px #c9c9c9;
+            box-shadow: 0px 3px 6px #c9c9c9;
+        }
+
+
+        .adduser_table {
+            width: 95%;
+            background-color: #fff;
+            text-align: left;
+            overflow: auto;
+            margin-bottom: 10px;
+            margin-top: 10px;
+            margin-left: 30px;
+            align-content: center;
+            border-collapse: separate;
+            border-spacing: 8px;
+        }
+
+
+        .cell_item {
+            border: none;
+        }
+
+        .cell_button {
+            border: none;
+        }
+
+        .adddiv_button {
+            position: relative;
+            font-size: 16px;
+            font-family: 'Lato', sans-serif;
+            color: #36D7B7;
+            text-decoration: none;
+            cursor: pointer;
+            display: inline-block;
+            padding-bottom: 3px;
+        }
+
+            .adddiv_button:hover {
+                color: #1BBC9B;
+            }
+
+            .adddiv_button:after {
+            }
+
+            .adddiv_button:hover:after {
+                width: 60px;
+                background: #36D7B7;
+            }
+
+        .cell_num {
+            text-align: center;
+        }
+
+        .cell_comm {
+            text-align: left;
+        }
+
+        .div_button {
+            text-align: right;
+        }
+
+        h3 {
+            color: #fff;
+            background-color: #6BB9F0;
+            text-align: center;
+            line-height: 30px;
+            height: 30px;
+        }
+
+        /* ------------------- Buttons --------------*/
+        .cancel_button {
+            padding: 7px 10px 10px 10px;
+            font-size: 16px;
+            font-family: 'Lato', sans-serif;
+            color: #fff;
+            border: solid 5px #e90029;
+            text-decoration: none;
+            background-color: #e90029;
+            cursor: pointer;
+        }
+
+            .cancel_button:hover {
+                background-color: #b71c1c;
+                border-color: #b71c1c;
+            }
+
+        .action-button {
+            padding: 7px 10px 10px 10px;
+            font-size: 16px;
+            font-family: 'Lato', sans-serif;
+            color: #e90029;
+            border: solid 5px #e90029;
+            text-decoration: none;
+            background-color: transparent;
+            cursor: pointer;
+        }
+
+            .action-button:hover {
+                border-radius: 20px 20px;
+            }
+
+        .hvr-radial-out {
+            display: inline-block;
+            vertical-align: middle;
+            -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+            box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+            -moz-osx-font-smoothing: grayscale;
+            position: relative;
+            overflow: hidden;
+            background: #fff;
+            -webkit-transition-property: color;
+            transition-property: color;
+            -webkit-transition-duration: 0.3s;
+            transition-duration: 0.3s;
+        }
+
+            .hvr-radial-out:before {
+                content: "";
+                position: absolute;
+                z-index: -1;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background: #fff;
+                border-radius: 100%;
+                -webkit-transform: scale(0);
+                transform: scale(0);
+                -webkit-transition-property: transform;
+                transition-property: transform;
+                -webkit-transition-duration: 0.3s;
+                transition-duration: 0.3s;
+                -webkit-transition-timing-function: ease-out;
+                transition-timing-function: ease-out;
+            }
+
+            .hvr-radial-out:hover, .hvr-radial-out:focus, .hvr-radial-out:active {
+                color: #fff;
+                background: #e90029;
+            }
+
+                .hvr-radial-out:hover:before, .hvr-radial-out:focus:before, .hvr-radial-out:active:before {
+                    -webkit-transform: scale(2);
+                    transform: scale(2);
+                }
+        /*------------------------------------------*/
+        /*-----PopUp styles----------*/
+        .adddiv_table {
+            width: 95%;
+            background-color: #fff;
+            text-align: left;
+            overflow: auto;
+            margin-bottom: 10px;
+            margin-top: 8px;
+            align-content: center;
+            border-collapse: separate;
+            border-spacing: 0px;
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: rgba(0, 0, 0, 0.7);
+            transition: opacity 500ms;
+            visibility: hidden;
+            opacity: 0;
+        }
+
+            .overlay:target {
+                visibility: visible;
+                opacity: 1;
+            }
+
+        .popup {
+            margin: 70px auto;
+            padding: 20px;
+            background: #fff;
+            border-radius: 5px;
+            width: 800px;
+            position: relative;
+            transition: all 0.5s ease-in-out;
+        }
+
+            .popup h2 {
+                margin-top: 0;
+                color: #fff;
+                background-color: #D64541;
+                font-size: 20px;
+                height: 60px;
+                line-height: 60px;
+                text-align: center;
+            }
+
+            .popup .close {
+                position: absolute;
+                top: 0px;
+                right: 5px;
+                transition: all 200ms;
+                font-size: 40px;
+                font-weight: bold;
+                text-decoration: none;
+                color: #333;
+            }
+
+                .popup .close:hover {
+                    color: gray;
+                }
+
+            .popup .content {
+                max-height: 30%;
+                overflow: auto;
+                padding: 8px;
+            }
+
+        .td_h3 {
+            width: 350px;
+            text-align: center;
+        }
+
+        .popupButton {
+            font-family: 'Lato', sans-serif;
+            font-size: 16px;
+            font-weight: 500;
+            color: #fff;
+            background-color: #36D7B7;
+            border-color: #36D7B7;
+            text-decoration: none;
+            cursor: pointer;
+            width: 65px;
+            height: 30px;
+        }
+
+        .list_box {
+            font-family: 'Lato', sans-serif;
+            font-size: 18px;
+            border: solid #BDC3C7 2px;
+        }
+
+        .td_buttons {
+            padding: 10px;
+            text-align: center;
+        }
