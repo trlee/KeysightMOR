@@ -13,7 +13,6 @@ namespace KeysightMOR
 {
     public partial class SignIn : System.Web.UI.Page
     {
-       
         protected void Page_Load(object sender, EventArgs e)
         {
             
@@ -25,7 +24,7 @@ namespace KeysightMOR
             {
                 using (SqlConnection conn = new SqlConnection(Shared.SqlConnString))
                 {
-                    using (SqlCommand cmd = new SqlCommand("select UserName, UserID from dbo.[User] where UserEmail='"+txtbox_email.Text+"' and Password='"+txtbox_passw.Text+"'",conn))
+                    using (SqlCommand cmd = new SqlCommand("select UserName, UserID, Position from dbo.[User] where UserEmail='"+txtbox_email.Text+"' and Password='"+txtbox_passw.Text+"'",conn))
                     {
                         conn.Open();
                         using (SqlDataReader dr = cmd.ExecuteReader())
@@ -33,8 +32,10 @@ namespace KeysightMOR
                             dr.Read();
                             string username = dr[0].ToString();
                             string userid = dr[1].ToString();
+                            string position = dr[2].ToString();
                             Session["username"] = username;
                             Session["userid"] = userid;
+                            Session["position"] = position;
                             Response.Redirect("PreHome.aspx");
                         }
                     }
