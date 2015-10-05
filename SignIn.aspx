@@ -144,6 +144,7 @@
                     <!--validators-->
 
                     <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" ErrorMessage="A valid email is required" Font-Size="Small" ControlToValidate="txtbox_email" Display="Dynamic" ValidateRequestMode="Inherit" SetFocusOnError="False" EnableViewState="True" ViewStateMode="Inherit" ForeColor="Red" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*"></asp:RegularExpressionValidator>
+
                      <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ErrorMessage="This field is required" Font-Size="Small" ControlToValidate="txtbox_email" Display="Dynamic" ForeColor="Red"></asp:RequiredFieldValidator>
                         
                 </p>
