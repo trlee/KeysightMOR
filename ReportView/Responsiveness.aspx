@@ -1,7 +1,7 @@
 ﻿<%@ Page Title="Responsiveness Report | Keysight Technologies" Language="C#" MasterPageFile="~/Template.Master" AutoEventWireup="true" CodeBehind="Responsiveness.aspx.cs" Inherits="KeysightMOR.ReportView.Responsiveness1" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-    <link rel="stylesheet" href="../Assets/Stylesheets/ReportView/Responsiveness.css" />
+    <link rel="stylesheet" href="../Assets/Stylesheets/ReportView/Responsiveness.css"/>
 </asp:Content>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">

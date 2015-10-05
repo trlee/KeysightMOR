@@ -1172,95 +1172,95 @@ namespace KeysightMOR.ControlPanel
 
                 }
             }
-            //else//lcw delete?
-            //{
-            //    string InsertB = "INSERT INTO dbo.[Business](UserDivID, CMID, Month, Year) VALUES (@UserDivID, @CMID, @MonthNow, @YearNow)";
-            //    SqlConnection SqlConnection1 = new SqlConnection(Shared.SqlConnString);
-            //    SqlCommand sqlCommand1 = new SqlCommand(InsertB, SqlConnection1);
-            //    sqlCommand1.Parameters.AddWithValue("@UserDivID", Session["UserDivID"].ToString());
-            //    sqlCommand1.Parameters.AddWithValue("@CMID", Session["SelectedCMID"].ToString());
-            //    sqlCommand1.Parameters.AddWithValue("@MonthNow", Session["MonthNow"].ToString());
-            //    sqlCommand1.Parameters.AddWithValue("@YearNow", Session["YearNow"].ToString());
-            //    //sqlCommand1.Parameters.AddWithValue("@DivID", Session["SelectedDivisionID"].ToString());
+            else//lcw delete?
+            {
+                string InsertB = "INSERT INTO dbo.[Business](UserDivID, CMID, Month, Year) VALUES (@UserDivID, @CMID, @MonthNow, @YearNow)";
+                SqlConnection SqlConnection1 = new SqlConnection(Shared.SqlConnString);
+                SqlCommand sqlCommand1 = new SqlCommand(InsertB, SqlConnection1);
+                sqlCommand1.Parameters.AddWithValue("@UserDivID", Session["UserDivID"].ToString());
+                sqlCommand1.Parameters.AddWithValue("@CMID", Session["SelectedCMID"].ToString());
+                sqlCommand1.Parameters.AddWithValue("@MonthNow", Session["MonthNow"].ToString());
+                sqlCommand1.Parameters.AddWithValue("@YearNow", Session["YearNow"].ToString());
+                //sqlCommand1.Parameters.AddWithValue("@DivID", Session["SelectedDivisionID"].ToString());
 
-            //    using (SqlConnection1)
-            //    {
-            //        try
-            //        {
-            //            SqlConnection1.Open();
-            //            sqlCommand1.ExecuteNonQuery();
+                using (SqlConnection1)
+                {
+                    try
+                    {
+                        SqlConnection1.Open();
+                        sqlCommand1.ExecuteNonQuery();
 
-            //            using (SqlCommand get = new SqlCommand("SELECT BusinessID FROM [dbo].Business WHERE UserDivID = " + Convert.ToInt32(Session["UserDivID"].ToString()) + " AND CMID = " + CMID + " AND Month = " + Convert.ToInt32(Session["MonthNow"].ToString()) + " AND Year = " + Convert.ToInt32(Session["YearNow"].ToString()) + " ;", SqlConnection1))
-            //            {
+                        using (SqlCommand get = new SqlCommand("SELECT BusinessID FROM [dbo].Business WHERE UserDivID = " + Convert.ToInt32(Session["UserDivID"].ToString()) + " AND CMID = " + CMID + " AND Month = " + Convert.ToInt32(Session["MonthNow"].ToString()) + " AND Year = " + Convert.ToInt32(Session["YearNow"].ToString()) + " ;", SqlConnection1))
+                        {
 
-            //                using (SqlDataReader dr = get.ExecuteReader())
-            //                {
-            //                    dr.Read();
-            //                    BusID = Convert.ToInt32(dr[0].ToString());
-            //                }
-            //            }
-            //        }
+                            using (SqlDataReader dr = get.ExecuteReader())
+                            {
+                                dr.Read();
+                                BusID = Convert.ToInt32(dr[0].ToString());
+                            }
+                        }
+                    }
 
-            //        catch (Exception ex)
-            //        {
-            //            lblSubmitDbStatusFalse.Text = ex.Message;
-            //        }
-            //    }
+                    catch (Exception ex)
+                    {
+                        lblSubmitDbStatusFalse.Text = ex.Message;
+                    }
+                }
 
-            //    //CHECK FOR B1_1_3 INSERTION BACKEND
-            //    SqlConnection SqlConnection = new SqlConnection(Shared.SqlConnString);
-            //    SqlCommand SqlCommand;
-            //    string SqlQuery = "INSERT INTO dbo.[BusinessScore](B1_1_1, B1_1_2, B1_1_3, B2_1_1, B2_1_2, B2_1_3, B2_1_4, B2_1_5, B2_2_1, BusinessID, Status) VALUES (@B1_1_1, @B1_1_2, @B1_1_3, @B2_1_1, @B2_1_2, @B2_1_3, @B2_1_4, @B2_1_5, @B2_2_1, @BusID, 1)";
+                //CHECK FOR B1_1_3 INSERTION BACKEND
+                SqlConnection SqlConnection = new SqlConnection(Shared.SqlConnString);
+                SqlCommand SqlCommand;
+                string SqlQuery = "INSERT INTO dbo.[BusinessScore](B1_1_1, B1_1_2, B1_1_3, B2_1_1, B2_1_2, B2_1_3, B2_1_4, B2_1_5, B2_2_1, BusinessID, Status) VALUES (@B1_1_1, @B1_1_2, @B1_1_3, @B2_1_1, @B2_1_2, @B2_1_3, @B2_1_4, @B2_1_5, @B2_2_1, @BusID, 1)";
 
-            //    using (SqlConnection = new SqlConnection(Shared.SqlConnString))
-            //    {
-            //        try
-            //        {
-            //            SqlConnection.Open();
+                using (SqlConnection = new SqlConnection(Shared.SqlConnString))
+                {
+                    try
+                    {
+                        SqlConnection.Open();
 
-            //            SqlCommand = new SqlCommand(SqlQuery, SqlConnection);
+                        SqlCommand = new SqlCommand(SqlQuery, SqlConnection);
 
-            //            SqlCommand.Parameters.AddWithValue("@B1_1_1", bScore[0]);
-            //            SqlCommand.Parameters.AddWithValue("@B1_1_2", bScore[1]);
-            //            SqlCommand.Parameters.AddWithValue("@B1_1_3", bScore[2]);
-            //            SqlCommand.Parameters.AddWithValue("@B2_1_1", bScore[3]);
-            //            SqlCommand.Parameters.AddWithValue("@B2_1_2", bScore[4]);
-            //            SqlCommand.Parameters.AddWithValue("@B2_1_3", bScore[5]);
-            //            SqlCommand.Parameters.AddWithValue("@B2_1_4", bScore[6]);
-            //            SqlCommand.Parameters.AddWithValue("@B2_1_5", bScore[7]);
-            //            SqlCommand.Parameters.AddWithValue("@B2_2_1", bScore[8]);
-            //            SqlCommand.Parameters.AddWithValue("@BusID", BusID);
+                        SqlCommand.Parameters.AddWithValue("@B1_1_1", bScore[0]);
+                        SqlCommand.Parameters.AddWithValue("@B1_1_2", bScore[1]);
+                        SqlCommand.Parameters.AddWithValue("@B1_1_3", bScore[2]);
+                        SqlCommand.Parameters.AddWithValue("@B2_1_1", bScore[3]);
+                        SqlCommand.Parameters.AddWithValue("@B2_1_2", bScore[4]);
+                        SqlCommand.Parameters.AddWithValue("@B2_1_3", bScore[5]);
+                        SqlCommand.Parameters.AddWithValue("@B2_1_4", bScore[6]);
+                        SqlCommand.Parameters.AddWithValue("@B2_1_5", bScore[7]);
+                        SqlCommand.Parameters.AddWithValue("@B2_2_1", bScore[8]);
+                        SqlCommand.Parameters.AddWithValue("@BusID", BusID);
 
-            //            SqlCommand.ExecuteNonQuery();
+                        SqlCommand.ExecuteNonQuery();
 
-            //            using (SqlCommand = new SqlCommand("INSERT INTO dbo.[BusinessComment](BC1_1_1, BC1_1_2, BC1_1_3, BC2_1_1, BC2_1_2, BC2_1_3, BC2_1_4, B2_1_5, B2_2_1, BusinessID, Status) VALUES (@BC1_1_1, @BC1_1_2, @BC1_1_3, @BC2_1_1, @BC2_1_2, @BC2_1_3, @BC2_1_4, @BC2_1_5, @BC2_2_1, @BusID, 1)", SqlConnection))
-            //            {
+                        using (SqlCommand = new SqlCommand("INSERT INTO dbo.[BusinessComment](BC1_1_1, BC1_1_2, BC1_1_3, BC2_1_1, BC2_1_2, BC2_1_3, BC2_1_4, B2_1_5, B2_2_1, BusinessID, Status) VALUES (@BC1_1_1, @BC1_1_2, @BC1_1_3, @BC2_1_1, @BC2_1_2, @BC2_1_3, @BC2_1_4, @BC2_1_5, @BC2_2_1, @BusID, 1)", SqlConnection))
+                        {
 
-            //                SqlCommand.Parameters.AddWithValue("@B1_1_1", B1_1_1C.Text);
-            //                SqlCommand.Parameters.AddWithValue("@B1_1_2", B1_1_2C.Text);
-            //                SqlCommand.Parameters.AddWithValue("@B1_1_3", B1_1_3C.Text);
-            //                SqlCommand.Parameters.AddWithValue("@B2_1_1", B2_1_1C.Text);
-            //                SqlCommand.Parameters.AddWithValue("@B2_1_2", B2_1_2C.Text);
-            //                SqlCommand.Parameters.AddWithValue("@B2_1_3", B2_1_3C.Text);
-            //                SqlCommand.Parameters.AddWithValue("@B2_1_4", B2_1_4C.Text);
-            //                SqlCommand.Parameters.AddWithValue("@B2_1_5", B2_1_5C.Text);
-            //                SqlCommand.Parameters.AddWithValue("@B2_2_1", B2_2_1C.Text);
-            //                SqlCommand.Parameters.AddWithValue("@BusID", BusID);
+                            SqlCommand.Parameters.AddWithValue("@B1_1_1", B1_1_1C.Text);
+                            SqlCommand.Parameters.AddWithValue("@B1_1_2", B1_1_2C.Text);
+                            SqlCommand.Parameters.AddWithValue("@B1_1_3", B1_1_3C.Text);
+                            SqlCommand.Parameters.AddWithValue("@B2_1_1", B2_1_1C.Text);
+                            SqlCommand.Parameters.AddWithValue("@B2_1_2", B2_1_2C.Text);
+                            SqlCommand.Parameters.AddWithValue("@B2_1_3", B2_1_3C.Text);
+                            SqlCommand.Parameters.AddWithValue("@B2_1_4", B2_1_4C.Text);
+                            SqlCommand.Parameters.AddWithValue("@B2_1_5", B2_1_5C.Text);
+                            SqlCommand.Parameters.AddWithValue("@B2_2_1", B2_2_1C.Text);
+                            SqlCommand.Parameters.AddWithValue("@BusID", BusID);
 
-            //                SqlCommand.ExecuteNonQuery();
-            //            }
+                            SqlCommand.ExecuteNonQuery();
+                        }
 
-            //            lblValidMsg.Text = "Thank you.";
-            //            lblSubmitDbStatusTrue.Text = "Business data entry successful";
+                        lblValidMsg.Text = "Thank you.";
+                        lblSubmitDbStatusTrue.Text = "Business data entry successful";
 
-            //        }
-            //        catch (Exception ex)
-            //        {
-            //            Response.Write(ex.ToString());
-            //            lblSubmitDbStatusFalse.Text = "Business data entry unsuccessful";
-            //        }
-            //    }
-            //}
+                    }
+                    catch (Exception ex)
+                    {
+                        Response.Write(ex.ToString());
+                        lblSubmitDbStatusFalse.Text = "Business data entry unsuccessful";
+                    }
+                }
+            }
         }
         protected void submit_b1_1_1_comment_Click(object sender, EventArgs e)
         {

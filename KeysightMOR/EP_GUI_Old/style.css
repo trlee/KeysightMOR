@@ -1,0 +1,333 @@
+﻿@import url(http://fonts.googleapis.com/css?family=Droid+Sans);
+@import url(http://fonts.googleapis.com/css?family=Varela+Round);
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400);
+
+@charset "utf-8";
+html
+{
+    position: relative;
+    min-height: 100%;
+    width:100%;
+    margin: 0;
+    background-color: #E7E7E7;
+}
+
+
+body 
+{ 
+    padding-right: 0px;
+    padding-left: 0px;
+    height: 100%;
+    width: 100%;
+    bottom: 10px;
+    color: #000;
+    font-family: "Lato", sans-serif;
+    font-size: 24px;
+    margin:0px 0px 70px 0px;
+    z-index: 0;
+    overflow: auto;
+}
+
+* {	
+	margin: 0px; padding: 0px;
+}
+.clear {
+    height:40px;
+	clear:both;}
+.clearleft {
+	display:block; 
+	clear:left;}
+.clearright{
+	display:block;
+	 clear:right;}
+.hide {
+	display:none;}
+a {
+	color:#B32C0E; 
+}
+
+a:hover {
+	color:#000000;
+	text-decoration:none;
+}
+* {
+	margin: 0;
+}
+
+#wrap {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: #666666;
+    min-height: 100%;
+    margin-bottom:40px;
+    overflow:auto;
+}
+
+/*Header*/
+
+.header{
+	height:0px;
+	background:#c2c2c2;
+	clear: both;
+
+}
+/*Header Menu*/
+#topmenu {
+    width:500px;
+	display:block;
+	list-style:none;
+	padding:0 0px 0px 0px;
+	float: right;
+    background:#FFFFFF;
+    height:37px;    
+}
+#topmenu li {
+	display:inline;
+}
+#topmenu a {
+	display:block;
+	float:left;
+	height:28px;
+	margin:0px 0px 0px 0px;
+	text-decoration:none;
+	padding:9px 15px 0px 15px;
+	text-align:center;
+    font-size: 18px;
+}
+#topmenu a, #topmenu a:visited, #topmenu a:active {
+	color:#000000;
+}
+#topmenu a:hover{
+	color:#ffffff;
+	background-color: #ff0303;
+}
+#topmenu .active a, #topmenu .active a:visited, #topmenu .active a:active{
+	color:#FFFFFF;
+	background-color: #ee0000;
+}
+
+
+/*Content*/
+#content {
+    padding-bottom:40px;
+	background-color: #efefef;
+}
+#mainpage {
+    color:black;
+    font-family:Arial;
+    font-size: 15px;
+	width:auto;
+    min-width:800px;
+	float:left;
+	padding:0 50px 50px 50px;
+	height:auto;
+    min-height:453px;
+}
+#mainpage p {
+	line-height:22px;
+	margin:10px 0px 0px 0px;
+}
+#mainpage blockquote {
+	background:#efefef;
+	display:block; 
+	margin:5px;
+	font:Georgia, "Times New Roman", Times, serif; 
+	font-style:italic;}
+h1, h2, h3, h4, h5 {
+	color:#B32C0E;
+	font-weight:bold;
+	font-family: Arial, Helvetica, sans-serif;
+    height: 40px;
+}
+#mainpage h1 {
+	font-size:24px;
+	color: #F2F7F3;
+}
+#mainpage h2 {
+	font-size:18px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	border-bottom: 1px solid #B52E10;
+}
+#mainpage h3 {
+	font-size:20px;}
+#mainpage h4 {
+	font-size:18px;}
+#mainpage h5 {
+	font-size:16px;}
+#mainpage table{
+    border:3px;
+    width:100%;
+    border-color:black;
+    border-spacing:0;
+}
+.style_2 {
+	font-size: 7px;
+	color: #000011;
+	}
+.style_2 a{
+	font-size: 7px;
+	color: #000011;
+	}
+.style_2 a:hover{
+	font-size: 7px;
+	color: #000011;
+	}
+#content #mainpage ol {
+	margin:10px 10px 10px 25px;}
+#content #mainpage ol li {
+	padding:5px 5px 5px 20px;}
+#content #mainpage ul li {
+	display:block; 
+	padding:0px; 
+	border-bottom: dashed 1px #D6E4A7;}
+
+
+/*Sidebar
+#sidebar {
+	margin:0px 0px 0px 0px;
+	width: 225px;
+	float: right;
+}
+#sidebarcontents {
+	padding:5px 0px 5px 0px;
+}
+
+//Sidemenu
+#menu {
+	list-style:none;
+}
+#menu li ul {list-style:none;}
+#menu li ul li {
+	display:block; 
+	height:25px; 
+	border-bottom:solid 1px #efefef;}
+#menu li ul a, #menu li ul a:visited, #menu li ul a:active {
+	display:block; 
+	height:20px; 
+	padding:5px 5px 0px 5px; 
+	text-decoration:none; 
+	color:#333333;}
+#menu li ul  a:hover {
+	background:#F8F9F2;
+	color:#B32C0E;
+}
+#menu h2 {
+	display:block;
+	border-bottom:solid 1px #D2E6CA;
+	padding:5px;
+	margin:10px 0px 0px 0px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size:18px;
+	color:#B32C0E;
+	font-weight:bold;
+}
+*/
+#credit {font-size:10px; 
+	padding:3px;}
+#sitename a{
+    padding:10px 0 10px 5px;
+    max-height:40px;
+	background-image:url(Keysight_Technologies_Logo.png);
+}
+
+#topbar{
+    font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:12px;
+	color:#666666;
+	height:84px;
+    background:#FFFFFF;
+    min-height: 100%;
+    margin-top: 0;
+
+}
+#caption{
+	height:50px;
+	background:url(images/caption.gif) repeat-x top left;
+	}
+	.bold{font-size:16px;
+	color:#FFFFFF;
+	padding-left:100px;
+	padding-top:25px;
+	}
+
+#cssTable{
+    border:1px;
+    border-spacing:0;
+}
+/*page loader*/
+.loader {
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+	background: url("Images/pageloader.GIF") 50% 50% no-repeat rgb(249,249,249);
+   
+}
+/*-----------*/
+.user_symbol
+{ 
+    height: 15px; 
+    width: 15px;
+   
+}
+.welcome_msg {
+    
+    color: #F9690E;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 16px;
+}
+/*-----------------*/
+/*--------Logo----------------*/
+.hvr-grow {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+}
+.hvr-grow:hover, .hvr-grow:focus, .hvr-grow:active {
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05);
+}
+
+/*-------------------------------------------------------*/
+
+/*-------------------Footer-------------*/
+footer 
+{  
+    position: absolute;
+    left: 0px;
+    bottom:0px;
+    margin-bottom:0px;
+    height:  70px;
+    width: 100%;
+    background-color: #343434;
+    display: block;
+    clear:both;
+  z-index: 50;
+  color: #000;
+  font-size: 18px;
+
+}
+
+.p_keysight
+{
+
+    text-decoration:none;
+    font-size: 16px;
+    font-family: 'Droid Sans', sans-serif; 
+    color: #fff;  
+    padding:10px 0 10px 0; 
+}
+
+/*--------------------------------*/

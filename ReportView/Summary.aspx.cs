@@ -5,7 +5,7 @@ using System.Data.SqlClient;
 using System.Globalization;
 using System.Text;
 
-namespace KeysightMOR
+namespace KeysightMOR.ReportView
 {
     public partial class Summary : System.Web.UI.Page
     {
